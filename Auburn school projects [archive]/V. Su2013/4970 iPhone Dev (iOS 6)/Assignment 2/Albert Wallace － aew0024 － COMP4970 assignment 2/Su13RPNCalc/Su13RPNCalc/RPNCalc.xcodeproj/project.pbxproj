@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A1E1D34176D0BDB0076BBC1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1D33176D0BDB0076BBC1 /* Default-568h@2x.png */; };
+		E68A5BDA160114D500FFC795 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68A5BD9160114D500FFC795 /* UIKit.framework */; };
+		E68A5BDC160114D500FFC795 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68A5BDB160114D500FFC795 /* Foundation.framework */; };
+		E68A5BDE160114D500FFC795 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68A5BDD160114D500FFC795 /* CoreGraphics.framework */; };
+		E68A5BE4160114D500FFC795 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E68A5BE2160114D500FFC795 /* InfoPlist.strings */; };
+		E68A5BE6160114D500FFC795 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E68A5BE5160114D500FFC795 /* main.m */; };
+		E68A5BEA160114D500FFC795 /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E68A5BE9160114D500FFC795 /* BIDAppDelegate.m */; };
+		E68A5BED160114D500FFC795 /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68A5BEC160114D500FFC795 /* BIDViewController.m */; };
+		E68A5BF0160114D500FFC795 /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E68A5BEE160114D500FFC795 /* BIDViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9A1E1D33176D0BDB0076BBC1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E68A5BD5160114D500FFC795 /* RPNCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPNCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68A5BD9160114D500FFC795 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E68A5BDB160114D500FFC795 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E68A5BDD160114D500FFC795 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E68A5BE1160114D500FFC795 /* RPNCalc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RPNCalc-Info.plist"; sourceTree = "<group>"; };
+		E68A5BE3160114D500FFC795 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E68A5BE5160114D500FFC795 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E68A5BE7160114D500FFC795 /* RPNCalc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPNCalc-Prefix.pch"; sourceTree = "<group>"; };
+		E68A5BE8160114D500FFC795 /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
+		E68A5BE9160114D500FFC795 /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
+		E68A5BEB160114D500FFC795 /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
+		E68A5BEC160114D500FFC795 /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
+		E68A5BEF160114D500FFC795 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BIDViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E68A5BD2160114D500FFC795 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68A5BDA160114D500FFC795 /* UIKit.framework in Frameworks */,
+				E68A5BDC160114D500FFC795 /* Foundation.framework in Frameworks */,
+				E68A5BDE160114D500FFC795 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E68A5BCA160114D500FFC795 = {
+			isa = PBXGroup;
+			children = (
+				9A1E1D33176D0BDB0076BBC1 /* Default-568h@2x.png */,
+				E68A5BDF160114D500FFC795 /* RPNCalc */,
+				E68A5BD8160114D500FFC795 /* Frameworks */,
+				E68A5BD6160114D500FFC795 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E68A5BD6160114D500FFC795 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E68A5BD5160114D500FFC795 /* RPNCalc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E68A5BD8160114D500FFC795 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E68A5BD9160114D500FFC795 /* UIKit.framework */,
+				E68A5BDB160114D500FFC795 /* Foundation.framework */,
+				E68A5BDD160114D500FFC795 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E68A5BDF160114D500FFC795 /* RPNCalc */ = {
+			isa = PBXGroup;
+			children = (
+				E68A5BE8160114D500FFC795 /* BIDAppDelegate.h */,
+				E68A5BE9160114D500FFC795 /* BIDAppDelegate.m */,
+				E68A5BEB160114D500FFC795 /* BIDViewController.h */,
+				E68A5BEC160114D500FFC795 /* BIDViewController.m */,
+				E68A5BEE160114D500FFC795 /* BIDViewController.xib */,
+				E68A5BE0160114D500FFC795 /* Supporting Files */,
+			);
+			path = RPNCalc;
+			sourceTree = "<group>";
+		};
+		E68A5BE0160114D500FFC795 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E68A5BE1160114D500FFC795 /* RPNCalc-Info.plist */,
+				E68A5BE2160114D500FFC795 /* InfoPlist.strings */,
+				E68A5BE5160114D500FFC795 /* main.m */,
+				E68A5BE7160114D500FFC795 /* RPNCalc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E68A5BD4160114D500FFC795 /* RPNCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E68A5BF3160114D500FFC795 /* Build configuration list for PBXNativeTarget "RPNCalc" */;
+			buildPhases = (
+				E68A5BD1160114D500FFC795 /* Sources */,
+				E68A5BD2160114D500FFC795 /* Frameworks */,
+				E68A5BD3160114D500FFC795 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPNCalc;
+			productName = RPNCalc;
+			productReference = E68A5BD5160114D500FFC795 /* RPNCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E68A5BCC160114D500FFC795 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BID;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Auburn University";
+			};
+			buildConfigurationList = E68A5BCF160114D500FFC795 /* Build configuration list for PBXProject "RPNCalc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E68A5BCA160114D500FFC795;
+			productRefGroup = E68A5BD6160114D500FFC795 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E68A5BD4160114D500FFC795 /* RPNCalc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E68A5BD3160114D500FFC795 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68A5BE4160114D500FFC795 /* InfoPlist.strings in Resources */,
+				E68A5BF0160114D500FFC795 /* BIDViewController.xib in Resources */,
+				9A1E1D34176D0BDB0076BBC1 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E68A5BD1160114D500FFC795 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68A5BE6160114D500FFC795 /* main.m in Sources */,
+				E68A5BEA160114D500FFC795 /* BIDAppDelegate.m in Sources */,
+				E68A5BED160114D500FFC795 /* BIDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E68A5BE2160114D500FFC795 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E68A5BE3160114D500FFC795 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E68A5BEE160114D500FFC795 /* BIDViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E68A5BEF160114D500FFC795 /* en */,
+			);
+			name = BIDViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E68A5BF1160114D500FFC795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E68A5BF2160114D500FFC795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E68A5BF4160114D500FFC795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RPNCalc/RPNCalc-Prefix.pch";
+				INFOPLIST_FILE = "RPNCalc/RPNCalc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E68A5BF5160114D500FFC795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RPNCalc/RPNCalc-Prefix.pch";
+				INFOPLIST_FILE = "RPNCalc/RPNCalc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E68A5BCF160114D500FFC795 /* Build configuration list for PBXProject "RPNCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E68A5BF1160114D500FFC795 /* Debug */,
+				E68A5BF2160114D500FFC795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E68A5BF3160114D500FFC795 /* Build configuration list for PBXNativeTarget "RPNCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E68A5BF4160114D500FFC795 /* Debug */,
+				E68A5BF5160114D500FFC795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E68A5BCC160114D500FFC795 /* Project object */;
+}

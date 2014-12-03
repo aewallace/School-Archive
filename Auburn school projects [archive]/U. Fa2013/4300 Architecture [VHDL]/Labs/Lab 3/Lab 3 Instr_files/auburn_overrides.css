@@ -1,0 +1,55 @@
+
+#header { background: url("https://s3.amazonaws.com/SSL_Assets/auburn/header_bg.jpeg") repeat-x scroll left center transparent; }
+
+#header-logo, #header.no-user #header-logo {
+  background: url("header_logo.png?v1") no-repeat scroll 0 0 transparent;
+  bottom: 10px;
+  height: 50px;
+  left: 6px;
+  width: 271px;
+}
+
+#header-logo-secondary {
+  background: url("Canvas_byinstructure_white_pritn.png?v1") no-repeat scroll 0 0 transparent;
+  bottom: 11px;
+  height: 26px;
+  position: absolute;
+  right: 26px;
+  width: 135px;
+  display: block;
+}
+
+#menu{ margin-left: 200px; }
+
+.menu-item .menu-item-title, .menu-item .menu-item-no-drop { color: #FFFFFF; }
+.menu-item.hover .menu-item-title { color: #555555; }
+
+#identity { background-color: #03244d !important; 
+  background: none;
+} 
+#identity .user_name a{ color: #f68026 !important; }
+#identity a { color: #FFFFFF; }
+#identity #feedback_link{ border-color: #333; background-color: #496e9c; }
+#identity .inbox a .unread-messages-count { background-color: #333; }
+
+
+#modal-box { background: url("canvas-login.png?v1") no-repeat !important}
+body.modal #modal-box.login-box h1 { background: none; }
+
+body.modal #modal-box, body.modal #login-box { box-shadow: none; }
+
+body.modal #modal-box.login-box {
+  height: 500px;
+  width: 647px;
+}
+
+body.modal #modal-box .button, body.modal #login-box .button {
+ background-color: #EA6B1D !important;
+ background-image: none;
+ border-color: #EA6B1D;
+}
+
+body.modal #modal-box.login-box a { color: #B3B3B3 !important; }
+
+.forgot_password_link { display: none; }
+

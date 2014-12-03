@@ -1,0 +1,32 @@
+(define (highELP cHigh hiList)
+  (if (null? hiList)
+      cHigh
+      (if (>= cHigh (car hiList))
+          (highELP cHigh (cdr hiList))
+          (highELP (car hiList) (cdr hiList)))))
+
+(define (lowHELP cLow loList)
+  (if (null? loList)
+      cLow
+      (if (<= cLow (car loList))
+          (lowHELP cLow (cdr loList))
+          (lowHELP (car loList) (cdr loList)))))
+
+(define (highest hiList)
+  (if (null? hiList)
+      hiList
+      (if (>= (car hiList) (car (cdr hiList)))
+          (highELP (car hiList) (cdr hiList))
+          (highELP (car (cdr hiList)) (cdr (cdr hiList))))))
+
+(define (lowest loList)
+  (if (null? loList)
+      loList
+      (if (<= (car loList) (car (cdr loList)))
+          (lowHELP (car loList) (cdr loList))
+          (lowHELP (car (cdr loList)) (cdr (cdr loList))))))
+
+(define (extremes listIn)
+  (if (null? listIn)
+      listIn
+      (cons (lowest listIn) (highest listIn))))

@@ -1,0 +1,9 @@
+{C:/Users/Albert E/Desktop/Lab 002 COMPARCH/ALU_start.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Albert E/Desktop/Lab 002 COMPARCH/ALU_start.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Compiling package dlx_types
+-- Loading package dlx_types
+-- Compiling entity alu
+-- Compiling architecture alu_hdw_behavior of alu
+
+} {} {}}

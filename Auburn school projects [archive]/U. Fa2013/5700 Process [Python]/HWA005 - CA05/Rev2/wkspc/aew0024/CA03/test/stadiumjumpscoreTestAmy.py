@@ -1,0 +1,215 @@
+'''
+Created on Oct 20, 2013
+
+@author: Amy Eddins, modified (very lightly) by Albert Wallace aew0024
+'''
+
+import unittest
+import CA03.prod.participant as Participant
+import CA03.prod.stadiumjumpscore as StadiumJumpScore
+
+class TestStadiumJumpScore(unittest.TestCase):
+    
+    def setUp(self):
+        reload(Participant)
+        reload(StadiumJumpScore)
+        
+    def test000_createInstance(self):
+        self.assertIsInstance(StadiumJumpScore.StadiumJumpScore(), StadiumJumpScore.StadiumJumpScore)
+        
+    def test001_checkSetAndIs(self):
+        mySJScore = StadiumJumpScore.StadiumJumpScore()
+        self.assertEqual(False, mySJScore.isComplete())
+        self.assertEqual(False, mySJScore.isEliminated())
+        self.assertEqual(False, mySJScore.isWithdrawn())
+        self.assertEqual(False, mySJScore.isRetired())
+        
+        #self.assertEqual(True, mySJScore.setComplete())
+        self.assertEqual(True, mySJScore.setEliminated())
+        self.assertEqual(True, mySJScore.setWithdrawn())
+        self.assertEqual(True, mySJScore.setRetired())
+        
+        #self.assertEqual(True, mySJScore.isComplete())
+        self.assertEqual(True, mySJScore.isEliminated())
+        self.assertEqual(True, mySJScore.isWithdrawn())
+        self.assertEqual(True, mySJScore.isRetired())
+        
+        self.assertEqual(0, mySJScore.addKnockDown())
+        self.assertEqual(0, mySJScore.addRefusal())
+        self.assertEqual(0, mySJScore.addKnockDownRefusal())
+        
+    def test002_testClockAndJumpScore(self):
+        SJS1 = StadiumJumpScore.StadiumJumpScore()
+        self.assertEqual(34920, SJS1.setStart(clock = 94200))
+        self.assertEqual(35116, SJS1.setFinish(clock = 94516))
+        self.assertEqual(38520, SJS1.setStart(clock = 104200))
+        self.assertEqual(38716, SJS1.setFinish(clock = 104516))
+        self.assertEqual(4, SJS1.addKnockDown())
+        self.assertEqual(4, SJS1.addRefusal())
+        self.assertEqual(12, SJS1.addKnockDownRefusal())
+        self.assertEqual("E", SJS1.addDismount())
+        self.assertEqual("R", SJS1.addFall())
+        
+    def test003_testClockAndJumpScoreWithGoodLevel(self):
+        SJS2 = StadiumJumpScore.StadiumJumpScore()
+        newParticipantWithLevel = Participant.Participant("Amy", "Lightning", "A")
+        self.assertEqual(None, newParticipantWithLevel.getStadiumJumpScore())
+        newParticipantWithLevel.setStadiumJumpScore(SJS2)
+        self.assertEqual(38520, SJS2.setStart(clock = 104200))
+        self.assertEqual(38716, SJS2.setFinish(clock = 104516))
+        self.assertEqual(True, SJS2.setComplete())
+        self.assertEqual(8, SJS2.addKnockDownRefusal())
+        self.assertEqual(22, SJS2.getTimePenalty())
+        self.assertEqual(8, SJS2.getJumpPenalty())
+        self.assertEqual(30, SJS2.getScore())
+        self.assertEqual(SJS2, newParticipantWithLevel.getStadiumJumpScore())
+        
+    def test004_testInvalidClock(self):
+        SJS3 = StadiumJumpScore.StadiumJumpScore()
+        self.assertRaises(ValueError, SJS3.setStart, clock = 109900)
+        self.assertRaises(ValueError, SJS3.setStart, clock = 109900)
+        self.assertRaises(ValueError, SJS3.setFinish, clock = 109900)
+        self.assertRaises(ValueError, SJS3.setFinish, clock = 109900)
+        
+    def test005_NoStartTime(self):
+        SJS4 = StadiumJumpScore.StadiumJumpScore()
+        self.assertEqual(38520, SJS4.setStart(clock = 104200))
+        self.assertRaises(ValueError, SJS4.setComplete)
+        
+    def test006_NoFinishTimeandFinishTimeBeforeStartTime(self):
+        SJS5 = StadiumJumpScore.StadiumJumpScore()
+        self.assertEqual(38515, SJS5.setFinish(clock = 104155))
+        self.assertEqual(38520, SJS5.setStart(clock = 104200))
+        self.assertRaises(ValueError, SJS5.setComplete)
+        
+    def test007_checkifComplete(self):
+        SJS6 = StadiumJumpScore.StadiumJumpScore()
+        self.assertEqual(38520, SJS6.setStart(clock = 104200))
+        self.assertEqual(38716, SJS6.setFinish(clock = 104516))
+        self.assertRaises(ValueError, SJS6.getTimePenalty)
+        self.assertRaises(ValueError, SJS6.getJumpPenalty)
+        self.assertRaises(ValueError, SJS6.getScore)
+        
+    def test008_designateRidingLevel(self):
+        SJS7 = StadiumJumpScore.StadiumJumpScore()
+        self.assertRaises(ValueError, SJS7.getTimePenalty)
+        self.assertRaises(ValueError, SJS7.getJumpPenalty)
+        self.assertRaises(ValueError, SJS7.getScore)
+        
+    def test009_participantScoreWithBadLevel(self):
+        SJS9 = StadiumJumpScore.StadiumJumpScore()
+        newParticipantWithBadLevel = Participant.Participant("Amy")
+        #self.assertRaises(ValueError, newParticipantWithBadLevel.setStadiumJumpScore, SJS9) #Albert says: not valid for my design
+        self.assertEqual(38520, SJS9.setStart(clock = 104200))
+        self.assertEqual(38716, SJS9.setFinish(clock = 104516))
+        self.assertEqual(True, SJS9.setComplete())
+        self.assertEqual(8, SJS9.addKnockDownRefusal())
+        self.assertRaises(ValueError, SJS9.getTimePenalty)
+        self.assertRaises(ValueError, SJS9.getJumpPenalty)
+        self.assertRaises(ValueError, SJS9.getScore)
+        
+    def test010_participantScoreWithBadLevel(self):
+        SJS10 = StadiumJumpScore.StadiumJumpScore()
+        newParticipantWithBadLevel = Participant.Participant("Amy", "Slopoke", "BN")
+        newParticipantWithBadLevel.setStadiumJumpScore(SJS10)
+        self.assertEqual(38520, SJS10.setStart(clock = 104200))
+        self.assertEqual(38716, SJS10.setFinish(clock = 104516))
+        self.assertEqual(4, SJS10.addKnockDown())
+        self.assertEqual(4, SJS10.addKnockDown())
+        self.assertEqual(4, SJS10.addRefusal())
+        self.assertEqual(8, SJS10.addRefusal())
+        self.assertEqual(0, SJS10.addKnockDownRefusal())
+        self.assertEqual(True, SJS10.setComplete())
+        self.assertEqual("E", SJS10.getTimePenalty())
+        self.assertEqual("E", SJS10.getJumpPenalty())
+        self.assertEqual("E", SJS10.getScore())
+        
+    def testAlbert(self):
+        Bubba = Participant.Participant("Bubba")
+        self.assertRaises(ValueError, Participant.Participant, "")
+        self.assertRaises(ValueError, Participant.Participant, "     ")
+        Joe = Participant.Participant("  Joe  ")
+        Randolph = Participant.Participant("Randolph", "     Sugar Pie     ", "A", "D1")
+        self.assertEquals("Bubba", Bubba.getName())
+        self.assertEquals("Randolph", Randolph.getName())
+        self.assertEquals("Joe", Joe.getName())
+        self.assertEquals(None, Joe.getMount())
+        self.assertEquals("A", Randolph.getLevel())
+        self.assertEquals(None, Bubba.getRating())
+        self.assertEquals(1, Bubba.getNumber())
+        self.assertEquals("Sugar Pie", Randolph.getMount())
+        Bubba.setMount("  Rodney  ")
+        self.assertEquals("Rodney", Bubba.getMount())
+        Bubba.setLevel("TA")
+        self.assertEquals("TA", Bubba.getLevel())
+        Bubba.setRating("D3")
+        self.assertEquals("D3", Bubba.getRating())
+        self.assertRaises(ValueError, Joe.setLevel, "")
+        self.assertRaises(ValueError, Joe.setMount, "")
+        self.assertRaises(ValueError, Joe.setRating, "")
+        self.assertEquals("Rhino", Joe.setMount("  Rhino  "))
+        self.assertEquals("TA", Joe.setLevel(" TA "))
+        self.assertEquals("D3", Joe.setRating( " D3"))
+        #skip the 96 participants + 1
+        SJC001 = StadiumJumpScore.StadiumJumpScore()
+        Bubba.setStadiumJumpScore(SJC001)
+        SJCA01 = StadiumJumpScore.StadiumJumpScore()
+        self.assertEquals(False, SJCA01.isComplete())
+        self.assertEquals(False, SJCA01.isEliminated())
+        self.assertEquals(False, SJCA01.isRetired())
+        self.assertEquals(False, SJCA01.isWithdrawn())
+        self.assertEquals(8, SJCA01.addKnockDownRefusal())
+        self.assertEquals(4, SJCA01.addKnockDown())
+        self.assertEquals(8, SJCA01.addRefusal())
+        self.assertEquals(4, SJCA01.addKnockDown())
+        self.assertEquals(12, SJCA01.addKnockDownRefusal())
+        self.assertRaises(ValueError, SJCA01.setStart, 119900)
+        self.assertEquals(43200, SJCA01.setStart(120000))
+        self.assertEquals(43199, SJCA01.setFinish(115959))
+        self.assertRaises(ValueError, SJCA01.getTimePenalty,)
+        self.assertRaises(ValueError, SJCA01.getJumpPenalty,)
+        self.assertRaises(ValueError, SJCA01.getScore,)
+        self.assertRaises(ValueError, SJCA01.setComplete,)
+        self.assertEquals(43320, SJCA01.setFinish(120200))
+        self.assertEquals(True, SJCA01.setComplete())
+        self.assertRaises(ValueError, SJCA01.getScore,)
+        self.assertRaises(ValueError, SJCA01.getTimePenalty,)
+        self.assertRaises(ValueError, SJCA01.getJumpPenalty,)
+        Bubba.setLevel("BN")
+        Bubba.setStadiumJumpScore(SJCA01)
+        SJCB01 = Bubba.getStadiumJumpScore()
+        Mac = Participant.Participant("Mac", "     Georgia Peach     ", "A", "D1")
+        self.assertEquals("E", SJCB01.getScore())
+        self.assertEquals("E", SJCB01.getTimePenalty())
+        self.assertEquals("E", SJCB01.getJumpPenalty())
+        self.assertEquals(False, SJC001.isEliminated())
+        self.assertEquals(True, Joe.setStadiumJumpScore(SJC001))
+        SJCB02 = Joe.getStadiumJumpScore()
+        self.assertEquals(SJCB02, Joe.getStadiumJumpScore())
+        SJCB02.setStart(120000)
+        SJCB02.setFinish(120100)
+        SJCA02 = StadiumJumpScore.StadiumJumpScore()
+        SJCA02.setStart(120000)
+        SJCA02.setFinish(120100)
+        self.assertEquals(False, SJCA02.isComplete())
+        self.assertEquals(True, SJCA02.setWithdrawn())
+        self.assertEquals(True, SJCA02.isWithdrawn())
+        self.assertRaises(ValueError, SJCA02.getJumpPenalty,)
+        self.assertRaises(ValueError, SJCA02.getTimePenalty,)
+        self.assertRaises(ValueError, SJCA02.getScore,)
+        Mac.setStadiumJumpScore(SJCA02)
+        SJCA02 = Mac.getStadiumJumpScore()
+        self.assertEquals(True, SJCA02.setComplete())
+        self.assertEquals("W", SJCA02.getJumpPenalty())
+        self.assertEquals("W", SJCA02.getTimePenalty())
+        self.assertEquals("W", SJCA02.getScore())
+        SJCB03 = StadiumJumpScore.StadiumJumpScore()
+        SJCB03.setStart(120000)
+        SJCB03.setFinish(120100)
+        self.assertEquals(True, SJCB03.setRetired())
+        Randolph.setStadiumJumpScore(SJCB03)
+        SJCB04 = Randolph.getStadiumJumpScore()
+        SJCB04.setComplete()
+        self.assertEquals("R", SJCB04.getJumpPenalty())
+        self.assertEquals("R", SJCB04.getTimePenalty())
+        self.assertEquals("R", SJCB04.getScore())

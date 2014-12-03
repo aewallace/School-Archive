@@ -1,0 +1,3 @@
+Figure out why automated file is broken. There’s a main.py file in the dropbox, which is what Seth would do in the command line, but for some reason, when it’s done that way, it doesn’t write to any of the files, so something doesn’t work. Try what’s in the script main file in the command line to test it out to see what’s supposed to be done, then try to do it using the file. If any changes are possible to make it work the same way both ways, implement it and let him know.
+
+And then also…

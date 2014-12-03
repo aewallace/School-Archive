@@ -1,0 +1,63 @@
+m255
+K4
+z2
+13
+cModel Technology
+dC:/Users/Albert E/Desktop/Lab 001 COMPARCH
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+Ealu
+Z0 w1381873201
+Z1 DPx4 work 9 dlx_types 0 22 ljG?@YDjhG59RK17T3F9C0
+Z2 dC:/Users/Albert E/Desktop/Lab 002 COMPARCH
+Z3 8C:/Users/Albert E/Desktop/Lab 002 COMPARCH/ALU_start.vhd
+Z4 FC:/Users/Albert E/Desktop/Lab 002 COMPARCH/ALU_start.vhd
+l0
+L15
+VE[1GO<`mkNEe[1[CfPKXV2
+!s100 d<bFh1OH2A3n4ajY3<F962
+Z5 OP;C;10.2c;57
+32
+Z6 !s110 1381873201
+!i10b 1
+Z7 !s108 1381873201.569000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Albert E/Desktop/Lab 002 COMPARCH/ALU_start.vhd|
+Z9 !s107 C:/Users/Albert E/Desktop/Lab 002 COMPARCH/ALU_start.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+Aalu_hdw_behavior
+R1
+Z12 DEx4 work 3 alu 0 22 E[1GO<`mkNEe[1[CfPKXV2
+l410
+L36
+VVXh:m:W39J9PHNWITmc`61
+!s100 _Q;0n_X]oEFRSHUT:G6JP2
+R5
+32
+R6
+!i10b 1
+R7
+R8
+R9
+R10
+R11
+Pdlx_types
+Z13 w1381873201
+R2
+R3
+R4
+l0
+L1
+VljG?@YDjhG59RK17T3F9C0
+!s100 QTlF:0H>ZWaJl_In:fmOZ0
+R5
+32
+R6
+!i10b 1
+R7
+R8
+R9
+R10
+R11

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Employee>
+	<Password>adminpassword</Password>
+	<TypeOfEmployee>Admin</TypeOfEmployee>
+	<Department>Administrators</Department>
+	<FirstName>Default</FirstName>
+	<LastName>Admin</LastName>
+	<UserID>99900000</UserID>
+</Employee>

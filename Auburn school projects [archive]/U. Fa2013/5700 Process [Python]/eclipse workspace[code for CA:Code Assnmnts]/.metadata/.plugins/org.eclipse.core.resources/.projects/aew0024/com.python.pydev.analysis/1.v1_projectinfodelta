@@ -1,0 +1,25 @@
+INSTUPCA06.test.dressagescoreTest
+/Volumes/media partition/Dropbox/School/AU/Previous Semesters/U Fa2013/COMP5700 Umphress/wkspc/aew0024/CA06/test/dressagescoreTest.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&2|6|2|1&&2|7|2|1&&2|8|2|1&&2|9|2|1&&2|10|2|1&&2|11|2|1&&2|12|2|1&&2|13|2|1&&2|14|2|1&&2|15|2|1&&2|16|2|1&&2|17|2|1&&2|18|2|1&&2|19|2|1&&2|20|2|1&&2|21|2|1&&2|22|2|1
+setUp=3
+test001a0initializationVerification=7
+test011c1recoverStoredDressageScore=17
+test002b0userHasInvalidLevel=8
+test003c0canEnterGoodValues=9
+test005d0withdrawnLocksInformation=11
+test009a1retrieveScoresAfterGoodEntry=15
+test008f0manipulateAfterComplete=14
+test004d0eliminatedLocksInformation=10
+test016b2setWithdrawnThenTryToManipulate=21
+test006d0retiredLocksInformation=12
+test017c2setRetiredThenTryToManipulate=22
+CA06.test.dressagescoreTest=2
+tearDown=6
+Test=1
+test013e1retrieveScoresBeforeCompletion=18
+test010b1invalidScoreEntryBadParams=16
+test007e0inputParticipantIsBad=13
+mcflyDS=4
+test015a2setEliminatedThenTryToManipulate=20
+Test.setUp=5
+test014f1retrieveScoresAfterElimination=19

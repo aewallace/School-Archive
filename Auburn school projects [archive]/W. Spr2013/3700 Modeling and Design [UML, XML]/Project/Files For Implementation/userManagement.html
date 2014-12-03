@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>User Management</title>
+</head>
+
+<body>
+	<section class="newEmployee cf">
+		<form name="addEmployee" action="userManagement.php" method="POST" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="userid">New User ID</label>
+					<input type="text" name="userid" placeholder="User ID" required>
+				</li>
+				<li>
+					<label for="password">New Password</label>
+					<input type="password" name="password" placeholder="password" required>
+                </li>
+                <li>
+               	  <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" placeholder="first name" required>
+                    <label for"firstName">Last Name</label>
+                    <input type="text" name="lastName" placeholder="last name" required>
+                </li>
+                <li>
+                	<label for="department">Department</label>
+                    <select name="department" required>
+                        <option value="Hospital">Hospital</option>
+                        <option value="Pharmacy">Pharmacy</option>
+                        <option value="Radiology">Radiology</option>
+                        <option value="Lab">Lab</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="employeeType">Employee Type</label>
+                    <select name="employeeType" required>
+                        <option value="doctor">Doctor</option>
+                        <option value="nurse">Nurse</option>
+                        <option value="pharmacist">Pharmacist</option>
+                        <option value="labtech">Lab Tech</option>
+                    </select>
+                </li>
+				<li>
+					<input type="submit" value="add employee">
+				</li>
+			</ul>
+		</form>
+	</section>
+</body>
+</html>

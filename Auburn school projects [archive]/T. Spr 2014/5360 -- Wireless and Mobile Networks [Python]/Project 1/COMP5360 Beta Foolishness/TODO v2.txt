@@ -1,0 +1,35 @@
+Must implement:
+	Truck class
+	Routing Protocol
+	Packet structure
+		Single struct or multiple structs?
+	State diagram
+	Control Functions:
+		Join Platoon
+		Adjust self to stay in platoon
+		Leave Platoon
+	Function to compute effective packet drop rate
+		~r2
+		Past certain threshold, out of range (~100m)
+	Config file
+
+Packet Header must contain:
+	Sequence Number
+	Source Address
+	Previous Hop
+
+A: So, I’m not sure what’s already there (I don’t want to make a guess without thorough examination of the code & comments made), but what I see is that we need to (list not exhaustive):
+	－Set it up so that nodes use the config file to figure out who is in range and who isn’t, via the X and Y values alone. (I guess that means none of the nodes, by default, have links/neighbors, and the sample config file is more representative of the run further along in the simulation since it has some neighbors/links listed).
+	-Make sure that we come up with some way to have one node and only one node at a time access the configuration file while determining who’s close by and who isn’t.
+	－Test the packet forwarding from node to node in the platoon.
+	－Test/implement the ability for one node to have two threads, one for packets received and one for packets sent out/forwarded. I know some of that logic is there, but I am unsure how much needs to be done in terms of threads and thread synchronization. It’s probably more simplistic than I imagine it will be.
+	-Connect everything up so that nodes can happily run on separate machines, and actually talk to anyone close by.
+	－Create/ensure we have a way to test for/measure throughput. I didn’t check very hard for this when I browsed the code, but given a fixed packet size & type, it hopefully won’t be hard to keep track of how long it takes a packet to get home and return again. (So I’m guessing we need to have some sort of ACK packet, unless we want to send the original packet back through the chain of nodes.)
+	－Ensure we have a satisfactory way to produce a "visualization" of the current progress of the platoons. I am aware that there is code for this now, but I didn’t quite analyze it closely to see if any work needs to be done on producing a clean output/log file. And I have a backup stub for appending to a file, in case that needs to be created.
+	－Test the sucker for a 5 minute run. I can see that logic for acceleration/deceleration, joining, checking, etc exists, but I do not yet know how it actually is all wired up, nor do I have a guestimation for actual run time.
+
+…
+…
+	--Eventually we will have to write a brief report.
+
+Cool? No worries? It can be done. It will be done. It shall be done. We are awesome!

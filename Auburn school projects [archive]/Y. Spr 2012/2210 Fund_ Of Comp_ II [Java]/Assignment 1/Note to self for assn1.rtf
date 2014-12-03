@@ -1,0 +1,85 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset128 HiraKakuProN-W3;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\fs24 \cf0 Things I need to do for assn 1:\
+\
+-Decide which character will be joker A. Hard-code this.\
+-Decide which character will be joker B. Hard-code this.\
+-Make a class to perform a triple cut.\
+-Make a class to perform a count cut.\
+-Make a class to do conversions to numbers. One for raw alphabet conversion, one for keystream conversion.\
+\
+To make this work:\
+-We need the deck to initially be setup as if made for bridge.\
+-We will not fix this at any point in time UNLESS we use initDeck() to reset it to bridge order.\
+\
+\
+
+\b Cards class:
+\b0 \
+When instantiated, call a constructor to instantiate a single card. \
+\
+Each Card object will hold the value of the card relative to the suite, the value of the card relative to the WSS algorithm, the "friendly name" of the card (e.g. Jack, Queen, etc.), and the friendly name of the suite (Diamonds, Spades, etc.), and color of the suite. This is all so the deck could be searched by humans, with a little building upon the code. (Also, it's so I can actually see what card is being put where as I code and use the debugger. It provides tangibility, for a little extra effort).\
+\
+The ideal instantiation would have us get the card number and the suite type, from which we could determine the true card value (relative to the WSS algorithm), friendly name of the card, and color (red or black). Again, a large chunk of this is for my benefit, to make the program feel more tangible.\
+\
+
+\b Deck class
+\b0 \
+
+\b --deckOut method
+\b0 :\
+Takes a pre-defined array list, ideally with 54 slots [indices 0 through 53]. These slots will represent all the cards, as if they were a real deck. (As created when the constructor is called, the list will be empty & will be a flexible ArrayList, so the number of slots are not hard-coded. This aids in modification operations, as ArrayList objects prove easier to manipulate given built-in Java methods).\
+The intial array will not be hardcoded, but will be filled on-the-fly in memory as coded in the method.\
+
+\i (To fill the slots, repeat 1 through 13 as the number in.\
+..Then you can repeat the suite type until you reset the number\
+..And then you can fill the array. (Or, rather, the array will have been filled)).
+\i0 \
+
+\f1 \'81\'7c
+\f0 This method may be called upon by the assigned "initDeck" method but does NOT replace it; initDeck will still be used in "WSS" to maintain compatability, as well as include any necessary functionality to avoid overwriting the last deck. (The last known deck will be kept in memory each time initDeck is run; this is just going to be to help with debugging & practical understanding).\
+
+\f1 \'81\'7c
+\f0 This approach would have worked equally as well as hardcoding an initial array, but this ray, 1 less array is necessary; we will be constantly working with only that main array, and need not have another array of 52 Card objects in memory in case the working array must be reset.\
+\
+
+\b --[methods to manipulate the deck]
+\b0 \
+
+\f1 \'81\'7c
+\f0 To find the jokers OR the keystream card, there will be one method, with the argument being the promary objective (a specific joker, or the first joker/last joker found). It will return an integer, 0\uc0\u8804 x\u8804 53 (or 1 to 54, representing card position) if the search operation can be carried out, or "-1" if: [*]the keystream card is a joker (as the keystream card cannot be a joker). [*]the position of a given card cannot be found (invalid Card array, invalid search parameter).\
+
+\f1 \'81\'7c
+\f0 To do a triple cut, there will be one method with its own temporary arrays to rearrange the primary array.\
+
+\f1 \'81\'7c
+\f0 To do a count cut, there will be one method with its own temporary arrays to rearrange the primary array. It will take input from the joker search method and analyze it, rather than relying on jokerSearch to output a "-1" in the event that there is a joker at the bottom of the deck (since it is still a valid search, but no swapping has to be done).\
+
+\f1 \'81\'7c
+\f0 To retrieve keystream value, there will be one method, keyValue. The return from jokerSearch (ideally position of the keystream card) will be input, while output will be information retrieved from that "card" index in the array. This method could easily be responsible for processing which card would be the keystream card, but it's purely personal preference to put the search in the jokerSearch class.\
+\
+WSS class (as per assignment, plus extra)\
+
+\f1 \'81\'7c
+\f0 deck of cards.\
+
+\f1 \'81\'7c
+\f0 constructor. Will NOT create the instance of the deck, but WILL call on the deck's constructor to set up the initial deck of 54 cards. (Also: will ensure 54 cards have been created. I need to check myself as much as possible). Will, by extension of the Deck constructor, call on the deckOut method.\
+
+\f1 \'81\'7c
+\f0 initDeck. This will call on the deck's deckOut method directly, and will ensure the deck created by WSS is initialized properly.\
+
+\f1 \'81\'7c
+\f0 Encrypt. After getting keystream values from the Deck (via the jokerSearch & keyValue methods) & storing those in an array for the length of the text, it will take the text, feed it to a toNumbers method, retrieve *an array* of numbers, do calculations by sending both arrays to a secretSum method, then will take that array, throw it back into toNumbers, and will retrieve the stream of characters as a stream value. This will be the encrypted information. This method will do the padding (to ensure the multiple of 5 rule for character length of a message)\
+
+\f1 \'81\'7c
+\f0 toNumbers. Converts a string to numbers for use with encrypt, and (thanks to overloading) will also take an array of numbers to produce a string of text as a return.\
+
+\f1 \'81\'7c
+\f0 secretSum. Will take the arrays produced by the Encrypt method and produce one final array representing the encrypted code that has yet to be returned to (somewhat) human-readable letters.\
+\
+This approach feels modular, harebrained, and perfect for the amount of mystery surrounding this method of encryption. It is a bit messy, what with methods being called back and forth, but by compartmentalizing methods, finding an error becomes easier and it's easy to understand on a human level on a step-by-step basis. For example, the work done with the deck is contained mostly within the Deck class, with only the methods being called by outside methods/classes; this leaves the encryption/decryption to the WSS class. Similarly, the creation of a card within a deck is left to the Card class, which avoids the need to hardcode 54 different cards into a piece of code on a given storage medium.}

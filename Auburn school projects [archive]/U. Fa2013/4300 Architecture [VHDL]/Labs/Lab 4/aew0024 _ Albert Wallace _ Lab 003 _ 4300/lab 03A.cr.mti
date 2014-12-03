@@ -1,0 +1,93 @@
+{C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_datapath_v4.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_datapath_v4.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Compiling package dlx_types
+-- Loading package dlx_types
+-- Loading package bv_arithmetic
+-- Compiling entity alu
+-- Compiling entity mips_zero
+-- Compiling architecture mips_zero_behavior of mips_zero
+-- Compiling entity mips_register
+-- Compiling entity mips_bit_register
+-- Compiling architecture mips_bitreg_behavior of mips_bit_register
+-- Compiling entity mux
+-- Compiling entity index_mux
+-- Compiling architecture index_mux_behavior of index_mux
+-- Compiling entity sign_extend
+-- Compiling entity add4
+-- Compiling entity regfile
+-- Compiling entity DM
+-- Compiling architecture behaviour of DM
+-- Compiling entity IM
+-- Compiling architecture behaviour of IM
+
+} {} {}} {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/mux.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/mux.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Compiling package dlx_types
+-- Loading package dlx_types
+-- Compiling entity mux
+-- Compiling architecture mux_behavior of mux
+
+} {} {}} {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_control_v3.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_control_v3.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Loading package bv_arithmetic
+-- Loading package dlx_types
+-- Compiling entity mips_decoder
+-- Compiling entity mips_controller
+-- Compiling architecture behaviour of mips_controller
+
+} {} {}} {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/sign_extend.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/sign_extend.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Compiling package dlx_types
+-- Loading package dlx_types
+-- Compiling entity sign_extend
+-- Compiling architecture sign_extend_behavior of sign_extend
+
+} {} {}} {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/dlx_register.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/dlx_register.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Compiling package dlx_types
+-- Loading package dlx_types
+-- Compiling entity mips_register
+-- Compiling architecture mips_register_behavior of mips_register
+
+} {} {}} {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/add4 PC incrementer.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/add4 PC incrementer.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Compiling package dlx_types
+-- Loading package dlx_types
+-- Compiling entity add4
+-- Compiling architecture add4_pc_incrementer of add4
+
+} {} {}} {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/register_file.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/register_file.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Compiling package dlx_types
+-- Loading package dlx_types
+-- Compiling entity regfile
+-- Compiling architecture regfile_behavior of regfile
+
+} {} {}} {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_mips_v5.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_mips_v5.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Loading package dlx_types
+-- Compiling entity mips
+-- Compiling architecture struct of mips
+-- Loading package bv_arithmetic
+-- Loading entity mips_decoder
+-- Loading entity mips_controller
+-- Loading entity index_mux
+-- Loading entity IM
+-- Loading entity DM
+-- Loading entity mips_register
+-- Loading entity add4
+-- Loading entity regfile
+-- Loading entity sign_extend
+-- Loading entity mux
+-- Loading entity alu
+-- Loading entity mips_zero
+
+} {} {}}

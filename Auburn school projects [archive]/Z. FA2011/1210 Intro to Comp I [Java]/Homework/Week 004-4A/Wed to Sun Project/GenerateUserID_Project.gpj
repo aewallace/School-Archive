@@ -1,0 +1,22 @@
+!656;s
+J
+SAU0PATH+=%<JGRASP_PATHS>%;
+SCU0PATH+=%<JGRASP_PATHS>%;\012CYGWIN=nodosfilewarning
+S+U0PATH+=%<JGRASP_PATHS>%;\012CYGWIN=nodosfilewarning
+SJU0CLASSPATH=+%;%<EXTENSION_CLASSPATHS>\012CLASSPATH+=%<JGRASP_CLASSPATHS>%;\012CLASSPATH+=.%;\012PATH+=%<JAVA_BIN_DIR>%;\012PATH+=%<JGRASP_PATHS>%;\012Compile\012NOT_FOUND_MESSAGE==Make sure you have the full JDK, not just the JRE, installed.\\nThe JDK is available from http://www.oracle.com/technetwork/java/index.html.\012Run_Applet +Debug_Applet\012ADD_APPLETVIEWER_CLASSPATH==Y\012Document\012CLASSPATH=+%;%<TOOL_CLASSPATHS>\012
+SOU0PATH+=%<JGRASP_PATHS>%;\012CYGWIN=nodosfilewarning
+SPU0
+s#i0
+s#k0
+s#j0
+s#l0
+!2286;d
+[\012  grasp [\012   legendy -51.6875\012   legendx -67.0\012   version 1\012   winflags 2\012   height 377\012   width 387\012   wbp 0\012   initlayout 0\012   yoffs -24.906249999999986\012   xoffs -68.49999999999994\012   scale 1.0\012   args ""\012   otherflags 139\012   shallowjar 1\012   visflags 118423807\012  ]\012  directed 1\012  node [\012   ClassInfo [\012    fields "GenerateUserID\\011()V\\011c\\0111\\011\\011\\011GenerateUserID\011main\\011([Ljava/lang/String;)V\\011\\0119\\011\\011\\011GenerateUserID"\012    condition 0\012    access2 0\012    access 2490401\012    classname "GenerateUserID"\012    fromclassfiledate 1316379044000\012    fromclassfilename "%\011GenerateUserID.class"\012    fromfilename "%\011GenerateUserID.java"\012   ]\012   id 0\012   graphics [\012    center [\012     x -134.0\012     y 0.0\012     z 0.0\012    ]\012   ]\012   vgj [\012    flags 0\012   ]\012  ]\012  node [\012   ClassInfo [\012    fields "firstName\\011Ljava/lang/String;\\011\\0112\\011\\011\\011UserID\011lastName\\011Ljava/lang/String;\\011\\0112\\011\\011\\011UserID\011pswdCurrent\\011Ljava/lang/String;\\011\\0112\\011\\011\\011UserID\011userIdFull\\011Ljava/lang/String;\\011\\0112\\011\\011\\011UserID\011UserID\\011(Ljava/lang/String;Ljava/lang/String;)V\\011c\\0111\\011\\011\\011UserID\011generateNewPassword\\011()V\\011\\0111\\011\\011\\011UserID\011getId\\011()Ljava/lang/String;\\011\\0111\\011\\011\\011UserID\011getPassword\\011()Ljava/lang/String;\\011\\0111\\011\\011\\011UserID\011setPassword\\011(Ljava/lang/String;)Z\\011\\0111\\011\\011\\011UserID\011toString\\011()Ljava/lang/String;\\011\\0111\\011\\011\\011UserID"\012    condition 0\012    access2 0\012    access 2228257\012    classname "UserID"\012    fromclassfiledate 1316379048000\012    fromclassfilename "%\011UserID.class"\012    fromfilename "%\011UserID.java"\012   ]\012   id 1\012   graphics [\012    center [\012     x 0.0\012     y 0.0\012     z 0.0\012    ]\012   ]\012   vgj [\012    flags 0\012   ]\012  ]\012  edge [\012   ClassInfo [\012    dependencies "UserID\\011(Ljava/lang/String;Ljava/lang/String;)V\\011c\\011\\011\\011\\011UserID\011setPassword\\011(Ljava/lang/String;)Z\\011\\011\\011\\011\\011UserID"\012    type 3\012   ]\012   source 1\012   target 0\012  ]\012 ]!1;k
+1!42;g
+%\011GenerateUserID.java
+%\011UserID.java
+!36;f
+%	GenerateUserID.java
+%	UserID.java
+!92;t
+jgrCheckstyle0xr	%\011GenerateUserID.java	1316378647685:P	%\011UserID.java	1316378995926:P	

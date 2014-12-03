@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Patient Management</title>
+</head>
+
+<body>
+	<section class="newPatient cf">
+		<form name="addPatient" action="patientManagement.php" method="POST" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="patientid">please enter SSN.</label>
+					<input type="text" name="patientid" placeholder="patient ssn." required>
+				</li>
+				
+                <li>
+               	    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" placeholder="first name." required>
+                    <label for="middleName">Middle Name</label>
+                    <input type="text" name="middleName" placeholder="middle name.">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" placeholder="last name." required>
+                </li>
+                <li>
+                    <label for="heightft">Height (Feet, Inches) </label>
+                    <input type="number" name="heightft" placeholder="feet first." required>
+                    <input type="number" name="heightin" placeholder="...then inches." required>
+                </li>
+                <li>
+                    <label for="weight">Weight (lbs) </label>
+                    <input type="number" name="weight" placeholder="weight." required>
+                </li>
+                <li>
+                    <label for="age">Age (Years) </label>
+                    <input type ="number" name ="age" placeholder ="age." required> 
+                </li>
+                <li>
+                    <label for="dateob">Date Of Birth </label>
+                    <input type ="date" name ="dateob" required>
+                </li>
+                <li>
+                	<label for="sex">Sex</label>
+                    <select name="sex" required>
+                        <option value="Hospital">Male</option>
+                        <option value="Pharmacy">Female</option>
+                        <option value="Radiology">Other</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="priphone">primary phone</label>
+                    <input type="text" name="priphone" placeholder="required #." required>
+                    <label for="secphone">secondary</label>
+                    <input type="text" name="secphone" placeholder="optional #.">
+                </li>
+                <li>
+                    <label for="PrimaryEmail">primary email</label>
+                    <input type="email" name="PrimaryEmail" placeholder="required @." required>
+                    <label for="SecondaryEmail">secondary</label>
+                    <input type="email" name="SecondaryEmail" placeholder="optional @.">
+                </li>
+                
+                 <li>
+                     <label>primary emergency contact</label>
+                     <p>
+                         <label for="PriEmergName">name</label>
+                         <input type="text" name ="PriEmergName"required>
+                         <label for="PriEmergNumber">number</label>
+                         <input type="text" name="PriEmergNumber" placeholder="#" required>
+                         <label for="PriEmergAddress">address</label>
+                         <input type="text" name="PriEmergAddress" placeholder="full address" required>
+                     </p>
+                 </li>
+                 <li>
+                     <label>secondary emergency contact</label>
+                     <p>
+                         <label for="SecEmergName">name</label>
+                         <input type="text" name ="SecEmergName">
+                         <label for="SecEmergNumber">number</label>
+                         <input type="text" name="SecEmergNumber" placeholder="#" >
+                         <label for="SecEmergAddress">address</label>
+                         <input type="text" name="SecEmergAddress" placeholder="full address" >
+                     </p>
+                 </li>
+                 <li>
+                     <label>insurance</label>
+                     <p>
+                        <label for="IIProvider">company/provider.</label>
+                        <input type="text" name ="IIProvider" placeholder="provider.">
+                        <label for="IIAcctNum">account number.</label>
+                        <input type="text" name="IIAcctNum" placeholder="#" >
+                        <label for="IIPlan">plan.</label>
+                        <input type="text" name="IIPlan" placeholder="plan name." >
+                        <label for=" IIOtherInfo">misc. info.</label>
+                        <input type="text" name=" IIOtherInfo" placeholder="misc." >
+                     </p>
+                 </li>
+                </li>
+				<li>
+					<input type="submit" value="add patient">
+				</li>
+			</ul>
+		</form>
+	</section>
+</body>
+</html>

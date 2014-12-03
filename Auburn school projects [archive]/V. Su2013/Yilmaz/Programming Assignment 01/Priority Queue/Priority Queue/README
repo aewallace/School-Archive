@@ -1,0 +1,1 @@
+g++ xxx.cpp -o xxx -std=c++0x // make executable

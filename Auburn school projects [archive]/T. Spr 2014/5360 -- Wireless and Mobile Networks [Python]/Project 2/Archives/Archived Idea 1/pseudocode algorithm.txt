@@ -1,0 +1,65 @@
+//Sample pseudocode
+
+array1HopCache
+array2HopCache
+node previousMPR
+node nextMPR
+
+
+function broadcastBeacon()
+{
+	push_to_all_assembled_ports()
+}
+
+
+function MPRsendToDestination()
+{
+	if (general config file beacon)
+		{
+		broadcast packet on all ports
+		}
+	
+	else 
+		{
+		
+		}
+}
+
+function sendGeneralPackets()
+{
+	flood_as_normal
+}
+
+function determineMPR()
+{
+	if (totalTruckCountInRange = 1)
+	{
+		MPR = self
+	}
+	
+	else
+	{
+		if (distanceFromRearToFrontInRange < 0.75 * max_distance)
+		{
+			MPR = roundDown(totalTruckCountInRange / 2)
+		}
+		else
+		{
+			MPRcount = distanceFromRearToFrontInRange % (0.75 * max_distance)
+			nodesBetweenMPRS = roundDown(totalTruckCountInRange / MPRcount)
+			for (int tnode = nodesBetweenMPRS; tnode < totalTruckCountInRange; tnode+=nodesBetweenMPRS)
+			{
+				MPR = tnode
+				1HopsBehind = (tnode - nodesBetweenMPRS, tnode-1)
+				1HopsAhead = (tnode + 1, tnode + nodesBetweenMPRS)
+			}
+		}
+	}
+	updateHops
+	
+}
+
+function fellOutOfRange()
+{
+	determineMPR()
+}

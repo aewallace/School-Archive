@@ -1,0 +1,39 @@
+use work.dlx_types.all;
+use work.bv_arithmetic.all;
+
+entity sign_extend is
+
+    generic(prop_delay: Time := 5 ns);
+    port (input: in half_word; output: out dlx_word);
+
+end entity sign_extend;
+
+architecture sign_extend_behavior of sign_extend is
+
+begin
+  executable : process (input)
+  
+  variable result : dlx_word := "00000000000000000000000000000000";
+  variable source : half_word := "0000000000000000";
+    
+    
+  begin
+    source := input;
+    
+    for indexa in 0 to 15 loop
+      
+      result(indexa) := source(indexa);
+      
+    end loop;
+    
+    for indexr in 16 to 31 loop
+      
+      result(indexr) := source(15);
+      
+    end loop;
+    
+    output <= result after prop_delay;
+    
+  end process;
+
+end; --end architecture

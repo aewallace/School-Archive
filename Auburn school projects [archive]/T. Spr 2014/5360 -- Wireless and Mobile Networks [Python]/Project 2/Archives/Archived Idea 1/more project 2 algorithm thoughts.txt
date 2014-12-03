@@ -1,0 +1,38 @@
+In the current algorithm, we get one-hop neighbors already in the updateCache section.
+If the neighbor comes through the MPR, then we cound it as a two-hop neighbor.
+Adding an SRCMPR field to the packet, as well as the DST field for later rerouting.
+
+It’s up to the MPR to add itself to the SRCMPR part of the packet. That way, we can know the source MPR, and if the ID of the source MPR is not the same as the ID of the previous hop, then we know it is a multi-hop situation. If the source MPR is the same as the ID of the previous hop, and we have reached our destination, we know it is a single-hop.
+
+DST field allows multi-hop packets to eventually make it to where they are going, so each MPR along the way knows which way to push it once it gets to the proper node. The MPR will have to find out its neighbors soon enough, I suppose, and this will allow it to send straight to the proper node. If it knows that node is not on its list, it will send it forward, rather than backward.
+
+What happens with the one hop neighbor versus two hop neighbor deal?
+Well….
+With a known one-hop neighbor, you can send it straight to a given MPR, and reduce traffic.
+
+With a known two-hop neighbor, with last known good MPR, you will be able to have the destination port be that MPR…except….you kind of have to know which MPR to send it through. So you have your list of your MPRs (max of 2, hopefully), and you know which MPR the node came through first. So you send it to that port, that MPR checks the DST, knows it isn’t meant for itself, and that MPR should also eventually have a list of who has communicated through itself. Should it find the DST ID in its list, it can continue directly to the next MPR port ID; should it fail to find the DST ID in the list, the MPR will still have to send it off blindly to the next MPR, and preferably will skip sending the packet back to the previous MPR. However, if so desired, it can check for all nodes in range again (though that should be known) and send to any "unknown" nodes at the same time. The packet will eventually reach a point where it either fizzles & dies or gets a reply. By that point, the SRC ID should be known to all the MPRs.
+
+Now, as for the MPRs who have to know the IDs…should they get a packet where the MPR is set to 20, they will know that the packet has not been through an MPR yet, is an originating piece of mail, has original data, and will get to set themselves as the SRC MPR. Each MPR should know its nearest MPR neighbors besides itself.
+
+If DST is 0, broadcast to all known devices. Still check the packet sequence number once you have passed it on, to know if you should pass it back. If you’ve already encountered that sequence number, from that SRC, kill the packet (do not forward).
+
+Choosing the MPR: Reserve SRCMPR range of 30 to 40, inclusive. start at the rearmost object. Seek forward. [Trucks will know if they are the rearmost objects in range by getting related position data.] Send the truck most forward but still in range a packet with SRCMPR set to 30; the most forward truck will know it is for itself by checking the DST tag; if most forward truck’s ID matches DST, it will automatically set itself as an MPR and seek forward in a similar fashion. When we reach the front,send the last packet with SRCMPR 30+ to the frontmost truck. The frontmost truck will check for anything in range ahead of it. If there is nothing found, it will NOT set itself as the MPR, and the return packet will have the last set SRCMPR flag value. [Increment every time you send it forward; if you do not send it forward, just send it back in the chain.] 
+
+Should the previous node have been the starting node, it will have not declared itself as an MPR and it will get a packet with SRCMPR value of 30. That means there are 0 known MPRs, and the rearmost vehicle should force the vehicle directly in front of it as the MPR by sending a packet with SRCMPR = 42.
+
+Trying to decide when to broadcast and when to do MP routing:
+－If DST = 0, as mentioned above, broadcast to all known MPR devices. So form the packets with DST = 0 to begin with.
+－If we see that we are not the MPR, and the nearestMPR is still set to 0 for self, broadcast AND forward as before, dropping packets you’ve already seen. 
+－If we see that we are not the MPR, and the nearestMPR has been properly set, then just drop the packet if it not meant for us.
+－If we see that we are the MPR, then we accept the packet and forward (or just read it, if it is meant for us)
+－We will be sure to send inner-platoon packets with a greater frequency, maybe every 10 milli seconds. Contrast, we will be sure to send general-broadcast packets (with DST = 0) every 100 ms. Inner-platoon and exterior-platoon packets alike will receive the DST = 0 packet and update information. Inner-platoon stuff will have a truncated broadcast to everything *in the platoon*. So we have to manage to have a cache of everything in the platoon. [So when we get the packets, if the platoon ID matches our platoon ID, we add it to the list of things we send to everything within the platoon, and we don’t blindly broadcast to every port; on the other hand, we send to everything in the port range available to us. self.neighbors no longer holds every node in the platoon; there may be multi-hop sends/receives which still qualify as part of the platoon.
+
+Do the "who’s an MPR" decision making during the joining process.
+
+If joining a previously-made platoon, front of BK checks to see if last MPR  of FNT is available. If so, front of BK can be MPR (if BK has more than 1 truck; else, just join with no MPR change. If last MPR of FNT is out of reach, designate last node of FNT as an MPR, and adjust MPR in BK as required [if front MPR of BK can reach rear MPR of FNT, leave alone; else, try to settle]
+
+Can we try to wrap that in with the platoon joining method already in the code? We shall see. It seems like the logic within the whole part where we determine who’s a leader and who’s a follower might be a great time to determine the MPR.
+
+since self.neighbors holds everything allowed to talk to directly, this implies that they will be in range. And the program can dynamically detect these neighbors itself. 
+－For a cache with only one entry: So compare yourself with the cached entry for your neighbor…if you get the entry and it isn’t an MPR, set yourself (!) as an MPR, and broadcast this new information. (You will set yourself as an MPR, and the SRCMPR will match the SRC ID, so you can determine this information from the packets)
+－For a cache with multiple entries: do nothing unless you are the leastmost entry relative to your cache, or the middle entry 

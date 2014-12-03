@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<SSID>111347890</SSID>
+	<FirstName>James</FirstName>
+	<MiddleName>Earl</MiddleName>
+	<LastName>Jones</LastName>
+	<Address>
+		<Street>3250 Drury Lane</Street>
+		<City>Smallville</City>
+		<State>California</State>
+		<ZIPcode>11240</ZIPcode>
+	</Address>
+	<DOB>
+		<MM>07</MM>
+		<DD>26</DD>
+		<YYYY>1985</YYYY>
+	</DOB>
+	<PrimaryPhone>787-959-2165</PrimaryPhone>
+	<SecondaryPhone>555-656-0185</SecondaryPhone>
+	<PrimaryEmail>buttered_toast_luvr@yahoo.com</PrimaryEmail>
+	<SecondaryEmail>da_best_ever@hotmail.com</email>
+	<PrimaryEmergContact>
+		<PriEmergName>Jill Walker</PriEmergName>
+		<PriEmergNumber>787-797-1010</PriEmergNumber>
+		<PriEmergAddress>0011 Tranquil Dove Cove, Niceville, California, 11234</PriEmergAddress>
+	</PrimaryEmergContact>
+	<SecondaryEmergContact>
+		<SecEmergName>Jill Walker</SecEmergName>
+		<SecEmergNumber>787-797-1010</SecEmergNumber>
+		<SecEmergAddress>
+	</SecondaryEmergContact>
+	<InsuranceInfo>
+		<IIProvider>[None]</IIProvider>
+		<IIPlan>[None]</IIPlan>
+		<IIOtherInfo>[None]</IIOtherInfo>
+	</InsuranceInfo>
+	<BloodType>AB</BloodType>
+</Patient>

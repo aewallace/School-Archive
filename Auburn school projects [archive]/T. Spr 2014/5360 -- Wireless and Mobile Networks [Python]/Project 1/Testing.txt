@@ -1,0 +1,73 @@
+LogFile format and column number reference is in LogFormat.txt
+
+GnuPlot:
+	To plot X lines on the same graph, first, click ChDir and navigate to the appropriate directory, then type 'plot' and then do EXACTLY (punctuation and all) the following for each of the X lines you'd like to graph:
+		'1' using 2:3 title '4' using line
+	Where
+		1: name of the file
+		2: data column index to use on X-Axis
+		3: data column index to use on Y-Axis
+		4: title of that specific line on the graph
+	For every line that has another line after it, also type comma space backslash (, \)
+	Example that plots what I sent you, column 2 for time on the X-Axis and column 9 for X position on the Y-Axis, from 10010.log and 10011.log, with the titles 'A' and 'B' respectively.
+		plot '10010.log' using 2:9 title 'A' with line, \
+		'10011.log' using 2:9 title 'B' with line
+
+To initialize nodes without config file, setting custom parameters:
+	Start as many ssh terminals as you need trucks
+	run main.py on each with parameters (nodeId) (X) (Y) (Vx) (Ax)
+	for each node that it should know about as a neighbor at the start:
+		enter its Id, when prompted
+		enter its starting X and Y coords, when prompted for each
+	enter 0 for id when no more neighbors need to be entered
+	After each node has been set up, hit enter to run the node. Ideally, you should hit enter on each window in rapid succession, so they all start at about the same time. I am probably going to implement a start broadcast that all live nodes listen for automatically, so that you can start them all simultaneously from a controller terminal window, but for now, do the enter thing.
+	Edit: You should be able to run nukem.py to kick everything off after everythig has been set up.
+
+Trucks represented by capital letters. Unless specified, velocities don't matter as long as all non-negative.
+Test Cases:
+	Scenario:
+		A in front of B by at least 50 m
+		both left lane
+		B going faster
+		Expected:
+			B joins platoon with A and they both move to right lane
+			B keeps distance with A
+	Scenario:
+		A and B identical, except in different lanes. A left B right.
+		Expected:
+			A will fall behind B
+			once A is behind B, A will form platoon with B in right lane
+			A keeps distance with B
+	Scenario:
+		A in front of B, both in left lane
+		A travelling faster than B
+		Expected:
+			B joins platoon with A and they both move to right lane
+			B keeps distance with A
+	Scenario:
+		A in front of B, both in right lane
+		Expected:
+			B joins platoon with A
+			B keeps distance with A
+	Scenario:
+		A in front of B, both in left lane
+		C in right lane, in front of A
+		Expected:
+			A slows down to get behind C
+			If close enough to matter, B slows down so it doesn't crash into A
+			both A and B get into right lane and join platoon with C
+	Scenario:
+		A in front of B, both in right lane
+		C in left lane, just behind A
+		Expected:
+			B joins platoon with A
+			C slows down to get behind B
+			C joins back of A-B platoon
+	Scenario:
+		A in front of B, both in right lane
+		C in left lane, at least 30 m in front of A
+		C is going same speed as A
+		Expected:
+			B joins platoon with A
+			C gets into right lane in front of A
+			A-B platoon merges with C to form C-A-B platoon

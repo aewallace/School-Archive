@@ -1,0 +1,99 @@
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:367:18: error: empty character constant
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:15: error: 'string' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:16: error: 'Menu' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:18: error: ISO C++ forbids declaration of 'string' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:18: error: expected ';' before '*' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:19: error: 'StaffFocus' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:20: error: 'ClientAccountFocus' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:21: error: 'SystemLogin' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:22: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:22: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:37: error: 'string' has not been declared
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:37: error: expected ',' or '...' before 'optionsIn'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:43: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:43: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:50: error: 'AccountDataBase' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:51: error: 'ClientDataBase' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:52: error: 'string' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:53: error: 'string' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:54: error: ISO C++ forbids declaration of 'string' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:54: error: expected ';' before '*' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:59: error: 'string' has not been declared
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:59: error: 'string' has not been declared
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:59: error: 'string' has not been declared
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:62: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:62: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:63: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:63: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:64: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:64: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:66: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:66: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:72: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:72: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:73: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:73: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:74: error: 'string' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:82: error: expected ',' or '...' before 'numAssocNamesIn'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:85: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:85: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:86: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:86: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:87: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:87: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:89: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:89: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:95: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:95: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:96: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:96: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:106: error: 'StaffDataBase' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:107: error: 'string' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:108: error: ISO C++ forbids declaration of 'string' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:108: error: expected ';' before '*' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:115: error: ISO C++ forbids declaration of 'vector' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:115: error: expected ';' before '<' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:122: error: 'string' has not been declared
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:122: error: 'string' has not been declared
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:124: error: 'StaffRole' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:126: error: 'boot' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:127: error: 'string' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:128: error: 'string' has not been declared
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:130: error: 'StaffRole' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:131: error: 'string' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:132: error: 'Password' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:133: error: multiple types in one declaration
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:145: error: 'string' has not been declared
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:147: error: 'string' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:155: error: 'string' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp: In constructor 'BankSystem::BankSystem()':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:160: error: 'staffDB' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:160: error: invalid conversion from 'const char*' to 'int'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:160: error:   initializing argument 2 of 'Staff::Staff(bool, int, int)'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:160: error: invalid conversion from 'const char*' to 'int'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:160: error:   initializing argument 3 of 'Staff::Staff(bool, int, int)'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:160: error: expected `)' before ';' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp: In destructor 'BankSystem::~BankSystem()':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:163: error: 'menuOptions' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp: In member function 'bool BankSystem::initialize()':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:166: error: 'string' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:166: error: 'input' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:171: error: expected type-specifier before 'string'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:171: error: expected `;' before 'string'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:179: error: expected type-specifier before 'string'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:179: error: expected `;' before 'string'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:184: error: 'mainMenu' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:167: warning: unused variable 'numOptForAdmin'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:168: warning: unused variable 'numOptForGenStaff'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp: At global scope:
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:186: error: prototype for 'bool BankSystem::callLogin()' does not match any in class 'BankSystem'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:10: error: candidate is: bool BankSystem::callLogin(bool&)
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp: In member function 'bool BankSystem::callLogin()':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:187: error: 'loginPortal' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:187: error: 'staffDB' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp: In member function 'bool BankSystem::callMenu()':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:190: error: 'mainMenu' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp: At global scope:
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:192: error: 'bool BankSystem::continueRunning' is not a static member of 'class BankSystem'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:192: error: 'string' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01_UnderWraps.cpp:192: error: expected ',' or ';' before '{' token

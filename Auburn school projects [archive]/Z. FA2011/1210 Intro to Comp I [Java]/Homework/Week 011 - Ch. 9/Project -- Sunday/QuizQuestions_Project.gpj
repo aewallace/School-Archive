@@ -1,0 +1,26 @@
+!656;s
+J
+SAU0PATH+=%<JGRASP_PATHS>%;
+SCU0PATH+=%<JGRASP_PATHS>%;\012CYGWIN=nodosfilewarning
+S+U0PATH+=%<JGRASP_PATHS>%;\012CYGWIN=nodosfilewarning
+SJU0CLASSPATH=+%;%<EXTENSION_CLASSPATHS>\012CLASSPATH+=%<JGRASP_CLASSPATHS>%;\012CLASSPATH+=.%;\012PATH+=%<JAVA_BIN_DIR>%;\012PATH+=%<JGRASP_PATHS>%;\012Compile\012NOT_FOUND_MESSAGE==Make sure you have the full JDK, not just the JRE, installed.\\nThe JDK is available from http://www.oracle.com/technetwork/java/index.html.\012Run_Applet +Debug_Applet\012ADD_APPLETVIEWER_CLASSPATH==Y\012Document\012CLASSPATH=+%;%<TOOL_CLASSPATHS>\012
+SOU0PATH+=%<JGRASP_PATHS>%;\012CYGWIN=nodosfilewarning
+SPU0
+s#i0
+s#k0
+s#j0
+s#l0
+!70;g
+%\011MultipleChoice.java
+%\011ShortAnswer.java
+%\011QuizQuestion.java
+!61;f
+%	MultipleChoice.java
+%	ShortAnswer.java
+%	QuizQuestion.java
+!55;l
+%\011MultipleChoiceTest.java
+%\011ShortAnswerTest.java
+!500;t
+jgrJUnit0xr	%\011MultipleChoice.java	1320799758407:P%\011MultipleChoiceTest.java	%\011ShortAnswer.java	1320618149140:P%\011ShortAnswerTest.java	%\011MultipleChoiceTest.java	1320799758407:P%\011MultipleChoice.java	%\011ShortAnswerTest.java	1320618149140:P%\011ShortAnswer.java	
+jgrCheckstyle0xr	%\011MultipleChoice.java	1320703184551:P	%\011ShortAnswer.java	1320703197913:P	%\011QuizQuestion.java	1320703193725:P	%\011MultipleChoiceTest.java	1320703189518:P	%\011ShortAnswerTest.java	1320703202147:P	

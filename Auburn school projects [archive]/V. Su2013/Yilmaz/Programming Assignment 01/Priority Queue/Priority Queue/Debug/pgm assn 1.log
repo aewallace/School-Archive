@@ -1,0 +1,16 @@
+﻿Build started 7/22/2013 5:00:09 PM.
+     1>Project "C:\Users\Albert E\Dropbox\School\AU\V Su2013\Yilmaz\Programming Assignment 01\Priority Queue\Priority Queue\pgm assn 1.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\pgm assn 1.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt console.cpp testcase1.cpp
+         testcase1.cpp
+     1>c:\users\albert e\dropbox\school\au\v su2013\yilmaz\programming assignment 01\priority queue\priority queue\heap.h(8): fatal error C1083: Cannot open include file: 'stdbool.h': No such file or directory
+         console.cpp
+     1>console.cpp : fatal error C1033: cannot open program database 'c:\users\albert e\dropbox\school\au\v su2013\yilmaz\programming assignment 01\priority queue\priority queue\debug\vc100.pdb'
+         Generating Code...
+     1>Done Building Project "C:\Users\Albert E\Dropbox\School\AU\V Su2013\Yilmaz\Programming Assignment 01\Priority Queue\Priority Queue\pgm assn 1.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.18

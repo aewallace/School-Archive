@@ -1,0 +1,254 @@
+float sbr = 50; //ratio by which to scale; 0 <= x < 50 makes smaller, 50 is pixel-accurate, > 50 makes larger
+float denomRGB = 255; //to convert from 8-bit representation to float representation
+
+
+//basic outline
+
+glColor3f(161/denomRGB,161/denomRGB,161/denomRGB); //color for the basic outline: grey-ish
+
+glBegin(GL_POLYGON);
+	glVertex2f(0*sbr,1*sbr);
+	glVertex2f(5.75*sbr,1*sbr);
+	glVertex2f(5.75*sbr,5*sbr);
+	glVertex2f(0*sbr,5*sbr);
+glEnd();
+
+glBegin(GL_POLYGON);
+	glVertex2f(5.75*sbr,2*sbr);
+	glVertex2f(11*sbr,2*sbr);
+	glVertex2f(11*sbr,3*sbr);
+	glVertex2f(5.75*sbr,3*sbr);
+glEnd();
+
+glBegin(GL_POLYGON);
+	glVertex2f(14*sbr,0*sbr);
+	glVertex2f(17.75*sbr,0*sbr);
+	glVertex2f(17.75*sbr,2.75*sbr
+	glVertex2f(14*sbr,2.75*sbr);
+glEnd();
+
+glBegin(GL_POLYGON);
+	glVertex2f(17.75*sbr,2*sbr);
+	glVertex2f(20.75*sbr,2*sbr);
+	glVertex2f(20.75*sbr,10.75*sbr);
+	glVertex2f(20.2*sbr,10.75*sbr);
+	glVertex2f(20.2*sbr,12.5*sbr);
+	glVertex2f(19.5*sbr,12.5*sbr);
+	glVertex2f(19.5*sbr,13.5*sbr);
+	glVertex2f(16*sbr,13.5*sbr);
+	glVertex2f(16*sbr,14*sbr);
+	glVertex2f(14.25*sbr,14*sbr);
+	glVertex2f(14.25*sbr,12.5*sbr);
+	glVertex2f(13.75*sbr,12.5*sbr);
+	glVertex2f(13.75*sbr,13*sbr);
+	glVertex2f(12*sbr,13*sbr);
+	glVertex2f(12*sbr,12.75*sbr);
+	glVertex2f(10.5*sbr,12.75*sbr);
+glEnd();
+
+glBegin(GL_POLYGON);
+	glVertex2f(2.25*sbr,2.75*sbr);
+	glVertex2f(18*sbr,2.75*sbr);
+	glVertex2f(18*sbr,12.5*sbr);
+	glVertex2f(2.75*sbr,12.5*sbr);
+	glVertex2f(2.75*sbr,10.75*sbr);
+	glVertex2f(2.25*sbr,10.75*sbr);
+	glVertex2f(2.25*sbr,6.25*sbr);
+glEnd();
+
+glBegin(GL_LINE_LOOP); //add more points to make progressively smoother like a circle
+	//center is 9.5*sbr,21*sbr);
+	//radius is…umm…1.6. So math based on that.
+	glVertex2f(11.1*sbr,21*sbr); //major corner or vertex 1
+	glVertex2f(10.3*sbr,21.8*sbr);
+	glVertex2f(9.5*sbr,22.6*sbr); //major vertex 2
+	glVertex2f(8.7*sbr,21.8*sbr);
+	glVertex2f(7.9*sbr,21*sbr); //major corner or vertex 3
+	glVertex2f(8.7*sbr,20.2*sbr);
+	glVertex2f(9.5*sbr,19.4*sbr);//major vertex 4
+	glVertex2f(10.3*sbr,20.2*sbr);
+glEnd();
+
+glBegin(GL_POLYGON);
+	glVertex2f(2.5*sbr,12.5*sbr);
+	glVertex2f(10.25*sbr,12.5*sbr);
+	glVertex2f(10.25*sbr,15*sbr);
+	glVertex2f(10.50*sbr,15*sbr);
+	glVertex2f(10.50*sbr,21*sbr);
+	glVertex2f(4.25*sbr,21*sbr);
+	glVertex2f(4.25*sbr,20.5*sbr);
+	glVertex2f(2*sbr,20.5*sbr);
+glEnd();
+
+//now for the placement of various objects around it
+
+//first up, some general concourse work, including an entrance or two
+//each general part of the concourse will be made of two triangles, of two different colors
+//draw all of one color first, then draw all of the other color second
+glColor3f(92/denomRGB,8/denomRGB,8/denomRGB); //color for the first triangle in each concourse path: deep ruby/maroon
+
+//LEFT VERTICAL
+glBegin(GL_TRIANGLES);
+	glVertex2f(0*sbr,24*sbr);
+	glVertex2f(0*sbr,8*sbr);
+	glVertex2f(1.5*sbr,24*sbr);
+glEnd();
+
+//HIGHER HORIZONTAL
+glBegin(GL_TRIANGLES);
+	glVertex2f(0*sbr,26*sbr);
+	glVertex2f(12*sbr,24*sbr);
+	glVertex2f(12*sbr,26*sbr);
+glEnd();
+
+//MIDDLE VERTICAL
+glBegin(GL_TRIANGLES);
+	glVertex2f(14*sbr,26*sbr);
+	glVertex2f(12*sbr,14*sbr);
+	glVertex2f(14*sbr,14*sbr);
+glEnd();
+
+//LOWER HORIZONTAL
+glBegin(GL_TRIANGLES);
+	glVertex2f(12*sbr,14*sbr);
+	glVertex2f(23*sbr,14*sbr);
+	glVertex2f(12*sbr,16*sbr);
+glEnd();
+
+//RIGHT VERTICAL
+glBegin(GL_TRIANGLES);
+	glVertex2f(21*sbr,0*sbr);
+	glVertex2f(23*sbr,14*sbr);
+	glVertex2f(21*sbr,14*sbr);
+glEnd();
+
+glColor3f(212/denomRGB,28/denomRGB,28/denomRGB); //color for the second triangle in each concourse path: candy red
+
+//LEFT VERTICAL
+glBegin(GL_TRIANGLES);
+	glVertex2f(0*sbr,8*sbr);
+	glVertex2f(1.5*sbr,8*sbr);
+	glVertex2f(1.5*sbr,24*sbr);
+glEnd();
+
+//HIGHER HORIZONTAL
+glBegin(GL_TRIANGLES);
+	glVertex2f(0*sbr,24*sbr);
+	glVertex2f(12*sbr,24*sbr);
+	glVertex2f(0*sbr,26*sbr);
+glEnd();
+
+//MIDDLE VERTICAL
+glBegin(GL_TRIANGLES);
+	glVertex2f(12*sbr,14*sbr);
+	glVertex2f(14*sbr,26*sbr);
+	glVertex2f(12*sbr,26*sbr);
+glEnd();
+
+//LOWER HORIZONTAL
+glBegin(GL_TRIANGLES);
+	glVertex2f(12*sbr,16*sbr);
+	glVertex2f(23*sbr,14*sbr);
+	glVertex2f(23*sbr,16*sbr);
+glEnd();
+
+//RIGHT VERTICAL
+glBegin(GL_TRIANGLES);
+	glVertex2f(21*sbr,0*sbr);
+	glVertex2f(23*sbr,0*sbr);
+	glVertex2f(23*sbr,14*sbr);
+glEnd();
+
+//now that walking surfaces are done, how about the entrances/exits?
+glColor3f(28/denomRGB,150/denomRGB,212/denomRGB); //color for the entrances/exits
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(1*sbr,11*sbr);
+	glVertex2f(2*sbr,12*sbr);
+	glVertex2f(1*sbr,13*sbr);
+glEnd();
+
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(11*sbr,1*sbr);
+	glVertex2f(13*sbr,1*sbr);
+	glVertex2f(12*sbr,2*sbr);
+glEnd();
+
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(18*sbr,0*sbr);
+	glVertex2f(20*sbr,0*sbr);
+	glVertex2f(19*sbr,1*sbr);
+glEnd();
+
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(22*sbr,3*sbr);
+	glVertex2f(23*sbr,2*sbr);
+	glVertex2f(23*sbr,4*sbr);
+glEnd();
+
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(22*sbr,6*sbr);
+	glVertex2f(23*sbr,5*sbr);
+	glVertex2f(23*sbr,7*sbr);
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(22*sbr,9*sbr);
+	glVertex2f(23*sbr,8*sbr);
+	glVertex2f(23*sbr,10*sbr);
+glEnd();
+
+
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(20*sbr,15*sbr);
+	glVertex2f(20.5*sbr,14*sbr);
+	glVertex2f(21*sbr,15*sbr);
+glEnd();
+
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(20*sbr,15*sbr);
+	glVertex2f(20.5*sbr,14*sbr);
+	glVertex2f(21*sbr,15*sbr);
+glEnd();
+
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(18*sbr,16*sbr);
+	glVertex2f(18.5*sbr,15*sbr);
+	glVertex2f(19*sbr,16*sbr);
+glEnd();
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(12*sbr,15*sbr);
+	glVertex2f(12.5*sbr,14*sbr);
+	glVertex2f(13*sbr,15*sbr);
+glEnd();
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(12*sbr,16*sbr);
+	glVertex2f(10.5*sbr,15.5*sbr);
+	glVertex2f(12*sbr,15*sbr);
+glEnd();
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(12*sbr,20*sbr);
+	glVertex2f(10.5*sbr,19.5*sbr);
+	glVertex2f(12*sbr,19*sbr);
+glEnd();
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(6*sbr,23*sbr);
+	glVertex2f(6.5*sbr,22*sbr);
+	glVertex2f(7*sbr,23*sbr);
+glEnd();
+
+glBegin(GL_TRIANGLES);
+	glVertex2f(9*sbr,24*sbr);
+	glVertex2f(9.5*sbr,23*sbr);
+	glVertex2f(10*sbr,24*sbr);
+glEnd();

@@ -1,0 +1,45 @@
+Must implement:
+	Truck class
+	Routing Protocol
+	Packet structure
+		Single struct or multiple structs?
+	State diagram
+	Control Functions:
+		Join Platoon
+		Adjust self to stay in platoon
+		Leave Platoon
+	Function to compute effective packet drop rate
+		~r2
+		Past certain threshold, out of range (~100m)
+	Config file
+
+Packet Header must contain:
+	Sequence Number
+	Source Address
+	Previous Hop
+
+Why do we need a port range if everything is sent over broadcast?
+	Secondly, is there anything NOT sent over broadcast?
+	Thirdly, broadcast sends to every host on a given port. If everyone has different ports, how is broadcast supposed to work?
+
+－Replies/thoughts to above question:
+	A: We need a port range so we don’t accidentally address other people’s virtual nodes. Yes, we will broadcast (we will be yelling at all "the nodes"), but we will only be flooding within our specified port range (we will only be yelling at all OUR nodes). So we will be passing packets along to all 10 ports (10100 to 10109), and if there is anything at the end of each of those ports, we use our virtual addresses to decide whether or not that particular node responds. Does that sound right? Am I thinking along the right lines?
+	S: A broadcast is sent to all nodes using the same port, which suggests that we only need one port, rather than a range. I understand the "different groups" part, just not why we need more than one port.
+	A: On page 4 of the project outline, under network config, it states that each TruckNode should have its own UDP port in addition to its own unique 16-bit address, which caused the kinds of thinking you saw above. So we will send from one node with its own port, to all other nodes (up to 9 max with 10 total ports assigned to our group). The UDP ports allow the physical connection to take place within our program, while we simulate the flooding, so to speak. That’s where my head’s at now.
+
+*******Now that a state-transition structure has been identified, fill in TruckNode class with methods (stubbed first, and then implemented)
+
+Thoughts on statefile:
+	For now, let's make a couple simplifications:
+		Platoons only form in the right lane, and the latter platoon joins the former platoon.
+			Implication: The only merges will be forward/backward. 
+		Single vehicles immediately get in the left lane if they aren't already there and don't try to find a platoon until they are in the left lane.
+			Implication: Single-vehicles joining platoons will only happen left lane to right lane, and platoon creation between two singles will form in the left lane, and then get into the right lane before looking for other platoons. Single vehicles ignore "still-forming" platoons of two cars until the platoon is in the right lane, at which point it becomes an official platoon. Also, single vehicles should look in front of and behind themselves for other single vehicles.
+		Platoons do not broadcast as single units, but instead, single vehicles broadcast their x/v/a, their platoon id (platoon id = id of platoon leader or 0 if not in a platoon?), and the ids of any co-platooned vehicle immediately leading or trailing that vehicle.
+			Think doubly-linked list. Each node knows itself, its neighbors, and which list it's in, if any.
+			Implication: more standardized packets, and transitions. Also, this would require that we slightly change our thoughts from before and have vehicles be the core of our OOD, rather than platoons, but I think it may make things simpler.
+		Any single car joining a platoon slows down until it reaches the back of the platoon, and joins from the back.
+			Implication: The left lane will be slowed down and blocked by any single vehicles that are currently trying to join platoons.
+		For now, no vehicle will ever leave a platoon after it has joined.
+	
+~A: I definitely agree that simplification is a good thing, and at a quick glance, your proposal is more than viable. With the standardized packets, things will be easier to process. I don’t think I had flooding in mind when I wrote up my thoughts, so it’s refreshing to be kept on track with good ideas.

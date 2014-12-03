@@ -1,0 +1,11 @@
+As defined, our program will only allow for a virtual queue. It stores numbers, which may be index numbers for an array (not defined within our program), as Object IDs. Paired with these Object IDs is a priority, or weight, which is self-explanatory. The priority for a given object may be change, and the heap will be rearranged to accommodate this changed priority.
+
+We support enqueue and dequeue operations natively as the primary operations our heap class is capable of, with the associated “change weight” method to change the priority (weight) of the object.
+
+To add an object (an ID and its priority/weight), you’d call the necessary ‘enqueue’ method in the heap class. To remove the object, use ‘dequeue’. To show the list of objects currently stored, the ‘display’ method is used.
+
+To interact with the heap class as is defined, we include Console.cpp. Once compiled and run, this provides a simple test interface, implemented from console.h. Console.h can be considered a sample delegate, which provides a layer of abstraction between the client/interface and the server/data structure.
+
+Should you want to store a specific type of object, you can make a companion array for the heap setup, or you can modify heap.h.
+－If you modify heap.h, you have to redefine the “Object” struct, and tweak insert/remove/enqueue methods to deal with your freshly created object.
+－If you create a companion array, use the existing heap.h, etc, but when you want to enqueue, add to the array, and use the index of the array as its object ID; changing priority will not affect the array, and will (ideally) make memory management for the heap easier. Given the design of the heap, an ObjectID can only be assigned to one Object, so with a specified heap size, you can set the array to be that same size. There will have to be some sort of delegate class to orchestrate or sync the actions desired by the user.

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Employee>
+	<Password>pancakes</Password>
+	<TypeOfEmployee>Doctor</TypeOfEmployee>
+	<Department>Radiology</Department>
+	<FirstName>Parker</FirstName>
+	<LastName>Franklin</LastName>
+	<UserID>25600001</UserID>
+</Employee>

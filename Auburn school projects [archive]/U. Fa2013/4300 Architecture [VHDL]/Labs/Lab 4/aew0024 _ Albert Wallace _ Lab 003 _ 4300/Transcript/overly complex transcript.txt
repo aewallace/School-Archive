@@ -1,0 +1,243 @@
+# Reading C:/Modeltech_pe_edu_10.2c/tcl/vsim/pref.tcl 
+# Loading project lab 03A
+# Compile of 32_bit_mux.vhd was successful.
+# Compile of 32_bit_register.vhd was successful.
+# Compile of bva-b.vhd was successful.
+# Compile of bva.vhd was successful.
+# Compile of 16bit-to-32bit_sign_extender.vhd was successful.
+# Compile of PC_incrementer.vhd was successful.
+# Compile of register_file.vhd was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -gui work.regfile
+# //  ModelSim PE Student Edition 10.2c Jul 18 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui work.regfile 
+# Loading std.standard
+# Loading work.dlx_types
+# Refreshing C:/Users/Albert E/Desktop/Lab 003 COMPARCH/work.bv_arithmetic(body)
+# Loading work.bv_arithmetic(body)
+# Loading work.regfile(regfile_behavior)
+do {C:/Users/Albert E/Desktop/Lab 003 COMPARCH/full_register_file_32x32bit_tests.do}
+# ** Error: invalid command name "read_notwrite"
+# Error in macro C:\Users\Albert E\Desktop\Lab 003 COMPARCH\full_register_file_32x32bit_tests.do line 6
+# invalid command name "read_notwrite"
+#     while executing
+# "read_notwrite"
+quit -sim
+vsim -gui work.regfile
+# vsim -gui work.regfile 
+# Loading std.standard
+# Loading work.dlx_types
+# Loading work.bv_arithmetic(body)
+# Loading work.regfile(regfile_behavior)
+do {C:/Users/Albert E/Desktop/Lab 003 COMPARCH/full_register_file_32x32bit_tests.do}
+# ** Error: (vish-4008) Object 'freeze' not found.
+# Error in macro C:\Users\Albert E\Desktop\Lab 003 COMPARCH\full_register_file_32x32bit_tests.do line 12
+# ** Error: (vish-4008) Object 'freeze' not found.
+# 
+#     while executing
+# "force freeze /regfile/clock 2#1"
+quit -sim
+# Load canceled
+vsim -gui work.add4
+# vsim -gui work.add4 
+# Loading std.standard
+# Loading work.dlx_types
+# Loading work.bv_arithmetic(body)
+# Loading work.add4(add4_pc_incrementer)
+do {C:/Users/Albert E/Desktop/Lab 003 COMPARCH/add4_PCincrementer_tests.do}
+# ** Error: (vish-4008) Object '/sign_extend/input' not found.
+# Error in macro C:\Users\Albert E\Desktop\Lab 003 COMPARCH\add4_PCincrementer_tests.do line 5
+# ** Error: (vish-4008) Object '/sign_extend/input' not found.
+# 
+#     while executing
+# "force -freeze /sign_extend/input 2#11111111111111111111111111111100"
+quit -sim
+vsim -gui work.add4
+# vsim -gui work.add4 
+# Loading std.standard
+# Loading work.dlx_types
+# Loading work.bv_arithmetic(body)
+# Loading work.add4(add4_pc_incrementer)
+do {C:/Users/Albert E/Desktop/Lab 003 COMPARCH/add4_PCincrementer_tests.do}
+quit -sim
+vsim -gui work.dlx_register
+# vsim -gui work.dlx_register 
+# Loading std.standard
+# Loading work.dlx_types
+# Loading work.bv_arithmetic(body)
+# Loading work.dlx_register(dlx_register_behavior)
+do {C:/Users/Albert E/Desktop/Lab 003 COMPARCH/full_register_file_32x32bit_tests.do}
+# ** Error: (vish-4008) Object '/regfile/clock' not found.
+# Error in macro C:\Users\Albert E\Desktop\Lab 003 COMPARCH\full_register_file_32x32bit_tests.do line 12
+# ** Error: (vish-4008) Object '/regfile/clock' not found.
+# 
+#     while executing
+# "force -freeze /regfile/clock 2#1"
+quit -sim
+vsim -gui work.dlx_register
+# vsim -gui work.dlx_register 
+# Loading std.standard
+# Loading work.dlx_types
+# Loading work.bv_arithmetic(body)
+# Loading work.dlx_register(dlx_register_behavior)
+do {C:/Users/Albert E/Desktop/Lab 003 COMPARCH/single_register_tests.do}
+# ** Error: (vish-4008) Object '/dlx_register/input' not found.
+# Error in macro C:\Users\Albert E\Desktop\Lab 003 COMPARCH\single_register_tests.do line 7
+# ** Error: (vish-4008) Object '/dlx_register/input' not found.
+# 
+#     while executing
+# "force -freeze /dlx_register/input 2#00000000000000000000000000000000"
+quit -sim
+vsim -gui work.dlx_register
+# vsim -gui work.dlx_register 
+# Loading std.standard
+# Loading work.dlx_types
+# Loading work.bv_arithmetic(body)
+# Loading work.dlx_register(dlx_register_behavior)
+do {C:/Users/Albert E/Desktop/Lab 003 COMPARCH/single_register_tests.do}
+quit -sim
+vsim -gui work.add4
+# vsim -gui work.add4 
+# Loading std.standard
+# Loading work.dlx_types
+# Loading work.bv_arithmetic(body)
+# Loading work.add4(add4_pc_incrementer)
+do {C:/Users/Albert E/Desktop/Lab 003 COMPARCH/add4_PCincrementer_tests.do}
+quit -sim
+vsim -gui work.mux
+# vsim -gui work.mux 
+# Loading std.standard
+# ** Error: (vsim-13) Recompile work.mux because work.dlx_types has changed.
+# 
+# ** Error: (vsim-13) Recompile work.mux(mux_behavior) because work.dlx_types has changed.
+# 
+# Error loading design
+# Compile of 32_bit_mux.vhd was successful.
+vsim -gui work.mux
+# vsim -gui work.mux 
+# Loading std.standard
+# Loading work.dlx_types
+# Loading work.bv_arithmetic(body)
+# Loading work.mux(mux_behavior)
+do {C:/Users/Albert E/Desktop/Lab 003 COMPARCH/32bit_mux_tests.do}
+quit -sim
+vsim -gui work.regfile
+# vsim -gui work.regfile 
+# Loading std.standard
+# ** Error: (vsim-13) Recompile work.regfile because work.dlx_types has changed.
+# 
+# ** Error: (vsim-13) Recompile work.regfile(regfile_behavior) because work.dlx_types has changed.
+# 
+# Error loading design
+# Compile of 32_bit_mux.vhd was successful.
+# Compile of 32_bit_register.vhd was successful.
+# Compile of bva-b.vhd was successful.
+# Compile of bva.vhd was successful.
+# Compile of 16bit-to-32bit_sign_extender.vhd was successful.
+# Compile of PC_incrementer.vhd was successful.
+# Compile of register_file.vhd was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -gui work.regfile
+# vsim -gui work.regfile 
+# Loading std.standard
+# Loading work.dlx_types
+# Refreshing C:/Users/Albert E/Desktop/Lab 003 COMPARCH/work.bv_arithmetic(body)
+# Loading work.bv_arithmetic(body)
+# Loading work.regfile(regfile_behavior)
+do {C:/Users/Albert E/Desktop/Lab 003 COMPARCH/full_register_file_32x32bit_tests.do}
+# ** Fatal: (vsim-3734) Index value -1 is out of range 31 downto 0.
+#    Time: 25 ns  Iteration: 0  Process: /regfile/executable File: C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd
+# Fatal error in Process executable at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd line 39
+# 
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Albert E/Desktop/Lab 003 COMPARCH/register_file.vhd 39 Process executable
+# 
+quit -sim
+# Compile of 32_bit_mux.vhd was successful.
+# Compile of 32_bit_register.vhd was successful.
+# Compile of bva-b.vhd was successful.
+# Compile of bva.vhd was successful.
+# Compile of 16bit-to-32bit_sign_extender.vhd was successful.
+# Compile of PC_incrementer.vhd was successful.
+# Compile of register_file.vhd was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -gui work.regfile
+# vsim -gui work.regfile 
+# Loading std.standard
+# Loading work.dlx_types
+# Refreshing C:/Users/Albert E/Desktop/Lab 003 COMPARCH/work.bv_arithmetic(body)
+# Loading work.bv_arithmetic(body)
+# Loading work.regfile(regfile_behavior)
+do {C:/Users/Albert E/Desktop/Lab 003 COMPARCH/full_register_file_32x32bit_tests.do}
+quit -sim
+vsim -gui work.sign_extend
+# vsim -gui work.sign_extend 
+# Loading std.standard
+# Loading work.dlx_types
+# Loading work.bv_arithmetic(body)
+# Loading work.sign_extend(sign_extend_behavior)
+do {C:/Users/Albert E/Desktop/Lab 003 COMPARCH/1632signextend_tests.do}

@@ -1,0 +1,117 @@
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:20: error: 'Menu' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:23: error: 'StaffFocus' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:24: error: 'ClientAccountFocus' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:25: error: 'ClientDataBase' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:26: error: 'AccountDataBase' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:27: error: 'StaffDataBase' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:28: error: 'SystemLogin' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:29: error: 'staff' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:29: error: template argument 1 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:29: error: template argument 2 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:44: error: expected ',' or '...' before 'optionsIn'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:46: error: expected ',' or '...' before 'optionsIn'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:61: error: ISO C++ forbids declaration of 'AccountDataBase' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:61: error: expected ';' before '*' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:62: error: ISO C++ forbids declaration of 'ClientDataBase' with no type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:62: error: expected ';' before '*' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:70: error: 'client' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:70: error: template argument 1 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:70: error: template argument 2 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:78: error: 'Client' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:78: error: template argument 1 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:78: error: template argument 2 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:95: error: 'account' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:95: error: template argument 1 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:95: error: template argument 2 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:103: error: 'Account' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:103: error: template argument 1 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:103: error: template argument 2 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:125: error: 'StaffDataBase' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:134: error: 'staff' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:134: error: template argument 1 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:134: error: template argument 2 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:143: error: 'StaffRole' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:145: error: 'boot' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:149: error: 'StaffRole' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:151: error: 'Password' does not name a type
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:152: error: multiple types in one declaration
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: In constructor 'BankSystem::BankSystem()':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:182: error: request for member 'push_back' in '((BankSystem*)this)->BankSystem::staffDB', which is of non-class type 'int'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:182: error: expected `)' before ';' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: In member function 'bool BankSystem::initialize()':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:206: error: 'mainMenu' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: At global scope:
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:208: error: prototype for 'bool BankSystem::callLogin()' does not match any in class 'BankSystem'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:15: error: candidate is: bool BankSystem::callLogin(bool&)
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: In member function 'bool BankSystem::callLogin()':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:209: error: 'loginPortal' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: In member function 'bool BankSystem::callMenu()':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:212: error: 'mainMenu' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: At global scope:
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:221: error: 'staff' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:221: error: template argument 1 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:221: error: template argument 2 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:221: error: no 'bool SystemLogin::getCheckCredentials(int&, bool&)' member function declared in class 'SystemLogin'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: In member function 'bool SystemLogin::getCheckCredentials(int&, bool&)':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:230: error: request for member 'size' in 'staffDB', which is of non-class type 'int'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:231: error: invalid types 'int[int]' for array subscript
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:234: error: 'activeName' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:242: error: invalid types 'int[int]' for array subscript
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:246: error: invalid types 'int[int]' for array subscript
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:253: error: 'i' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:266: error: 'i' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: At global scope:
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:278: error: expected ',' or '...' before 'optionsIn'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: In constructor 'Menu::Menu(std::string*)':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:279: error: 'optionsIn' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: At global scope:
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:285: error: expected ',' or '...' before 'optionsIn'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: In member function 'bool Menu::setOptions(std::string*)':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:286: error: 'optionsIn' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:289: error: 'optionsIn' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: In constructor 'ClientAccountFocus::ClientAccountFocus()':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:319: error: 'clients' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:319: error: 'cDB_primary' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:320: error: 'accounts' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:320: error: 'aDB_primary' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: At global scope:
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:331: error: function definition does not declare parameters
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: In constructor 'ClientDataBase::ClientDataBase(int, std::string*, std::string*, int*, std::string*, int*, int*, int*)':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:362: error: request for member 'push_back' in '((ClientDataBase*)this)->ClientDataBase::clientDB', which is of non-class type 'int'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:363: error: expected `;' before 'for'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:363: error: 'j' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:363: error: 'numAssocAccounts' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:363: error: expected `;' before ')' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:370: error: 'nameOfClient' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:371: error: 'residenceOfClient' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:372: error: 'sSN_of_client' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:373: error: 'employer' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:360: warning: unused variable 'acctIndex'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: At global scope:
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:378: error: prototype for 'bool ClientDataBase::addClient(std::vector<Account, std::allocator<Account> >&)' does not match any in class 'ClientDataBase'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:74: error: candidate is: int ClientDataBase::addClient()
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: In member function 'bool ClientDataBase::addClient(std::vector<Account, std::allocator<Account> >&)':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:399: error: expected initializer before 'int'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:403: error: expected `;' before 'cin'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:408: error: 'IDtoFind' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:419: error: 'numToAssoc' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:422: error: 'aByID' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:422: error: 'IDtoFind' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:432: error: request for member 'push_back' in '((ClientDataBase*)this)->ClientDataBase::clientDB', which is of non-class type 'int'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:432: error: 'aByID' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: At global scope:
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:435: error: 'account' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:435: error: template argument 1 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:435: error: template argument 2 is invalid
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:435: error: prototype for 'bool ClientDataBase::editClient(int&)' does not match any in class 'ClientDataBase'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:76: error: candidate is: int ClientDataBase::editClient()
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: In member function 'bool ClientDataBase::editClient(int&)':
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:442: error: request for member 'size' in '((ClientDataBase*)this)->ClientDataBase::clientDB', which is of non-class type 'int'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:443: error: invalid types 'int[int]' for array subscript
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:465: error: 'residenceOfClient' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:471: error: 'employer' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:477: error: 'sSN_of_client' was not declared in this scope
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:481: error: expected `;' before '}' token
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp: At global scope:
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:493: error: definition of implicitly-declared 'Client::Client()'
+/Users/wallace162x11/Dropbox/School/AU/X. Fa2012/COMP-2710-001 at MWF-8AM/Project/_001/Final Phase/Untitled/Project01r1_UnderWraps.cpp:500: confused by earlier errors, bailing out

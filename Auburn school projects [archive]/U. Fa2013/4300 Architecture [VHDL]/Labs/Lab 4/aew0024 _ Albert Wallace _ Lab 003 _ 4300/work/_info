@@ -1,0 +1,611 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dC:/Users/Albert E/Desktop/Lab 003 COMPARCH
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+Eadd4
+Z1 w1384809138
+Z2 DPx4 work 13 bv_arithmetic 0 22 O?3nBKDh?kfX3j@]JPNlc1
+Z3 DPx4 work 9 dlx_types 0 22 j1b:5@jo7FgaN^jMjSYn;2
+Z4 dC:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300
+Z5 8C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_datapath_v4.vhd
+Z6 FC:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_datapath_v4.vhd
+l0
+L124
+V`=LzEQYo;YhO0bcHNI4Ez2
+Z7 OP;C;10.2c;57
+32
+Z8 !s110 1384809138
+Z9 !s108 1384809138.778000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_datapath_v4.vhd|
+Z11 !s107 C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_datapath_v4.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 MOAo_M7b:h]7JhhP6cVG=0
+!i10b 1
+Aadd4_pc_incrementer
+Z14 DPx4 work 9 dlx_types 0 22 JHeKgk7dT`EPXF:a`PZcg1
+DEx4 work 4 add4 0 22 P504bLCadCFI<0FJf4UWC0
+l48
+L23
+VN3?UKH=H9:P_zGhUbobXP0
+R7
+32
+Z15 !s110 1383249885
+R12
+R13
+FC:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/add4 PC incrementer.vhd
+w1383249844
+8C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/add4 PC incrementer.vhd
+!s108 1383249885.023000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/add4 PC incrementer.vhd|
+!s107 C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/add4 PC incrementer.vhd|
+!s100 :_3;P_]:HP;]HRWPz<l`Q1
+!i10b 1
+Ealu
+R1
+R2
+R3
+R4
+R5
+R6
+l0
+L20
+VaF6Sa[BTdLBMLlNXg`6j[2
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!s100 4Fm`l=49gBY3EXza?Pa_Q2
+!i10b 1
+Pbv_arithmetic
+Z16 w1381637872
+Z17 dC:/Users/Albert E/Desktop/Lab 003 COMPARCH
+8C:/Users/Albert E/Desktop/Lab 2/folder/bva.vhd
+FC:/Users/Albert E/Desktop/Lab 2/folder/bva.vhd
+l0
+L15
+VO?3nBKDh?kfX3j@]JPNlc1
+R7
+32
+b1
+R12
+R13
+!s110 1383247835
+!s100 M3L2DjVSLlL`gZUdN;b3P3
+!i10b 1
+!s108 1383247835.039000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Albert E/Desktop/Lab 2/folder/bva.vhd|
+!s107 C:/Users/Albert E/Desktop/Lab 2/folder/bva.vhd|
+Bbody
+R2
+R4
+8C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/bva-b.vhd
+FC:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/bva-b.vhd
+l0
+L1
+VhF4GOP75hlWnWU3d_aLlZ0
+R7
+32
+R12
+R13
+nbody
+!s100 bEgB3AJgNeHdEFL:Ce`9S3
+!s110 1383249873
+!i10b 1
+!s108 1383249873.804000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/bva-b.vhd|
+!s107 C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/bva-b.vhd|
+Edlx_register
+Z18 w1383249755
+R14
+R4
+Z19 8C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/dlx_register.vhd
+Z20 FC:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/dlx_register.vhd
+l0
+L16
+VhQO7==5kFdM39OdzEz<TU3
+R7
+32
+R15
+Z21 !s108 1383249885.196000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/dlx_register.vhd|
+Z23 !s107 C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/dlx_register.vhd|
+R12
+R13
+!s100 Pm?elE6cAl?I7:N2DBDAM2
+!i10b 1
+Adlx_register_behavior
+R14
+DEx4 work 12 dlx_register 0 22 hQO7==5kFdM39OdzEz<TU3
+l26
+L23
+VUV^EczRSX^SJ^giS:P_8L2
+R7
+32
+R15
+R21
+R22
+R23
+R12
+R13
+!s100 `_Eb<PVJ1@8_boL1bGXnM2
+!i10b 1
+Pdlx_types
+Z24 w1384899392
+R4
+Z25 8C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/sign_extend.vhd
+Z26 FC:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/sign_extend.vhd
+l0
+L3
+VJHeKgk7dT`EPXF:a`PZcg1
+!s100 ^^1@S=l1`1ecf>V3KI0^f1
+R7
+32
+Z27 !s110 1384899398
+!i10b 1
+Z28 !s108 1384899398.804000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/sign_extend.vhd|
+Z30 !s107 C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/sign_extend.vhd|
+R12
+R13
+Edm
+R1
+R2
+R3
+R4
+R5
+R6
+l0
+L144
+VF1Mf6Q?BQ[XR`9ja^7Oel0
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!s100 bz^LhSTQhLIJDKn]@nWYn2
+!i10b 1
+Abehaviour
+R2
+R3
+Z31 DEx4 work 2 dm 0 22 F1Mf6Q?BQ[XR`9ja^7Oel0
+l156
+L154
+V5g`c5kZaI[:f<VNKKVd`A2
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!s100 SRk0_0:lOnbdW_[n>Z2h?3
+!i10b 1
+Eim
+R1
+R2
+R3
+R4
+R5
+R6
+l0
+L184
+V;E^R5`lA[[XjmRW9m95z<2
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!s100 <3ToR_k=XZRMH3Bi`^R792
+!i10b 1
+Abehaviour
+R2
+R3
+Z32 DEx4 work 2 im 0 22 ;E^R5`lA[[XjmRW9m95z<2
+l194
+L192
+VW3L^cg4GIMO9XGT[;38nC0
+R7
+32
+R9
+R10
+R11
+R12
+R13
+!s100 FknBnc;dZ1kQTdQnPgdHW0
+!s110 1384809139
+!i10b 1
+Eindex_mux
+R1
+R3
+R4
+R5
+R6
+l0
+L93
+Ve3Y^hVjoU2;6E@gY2k:4;0
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!s100 zkPYm62ZgGb^k2jEIl0081
+!i10b 1
+Aindex_mux_behavior
+R3
+Z33 DEx4 work 9 index_mux 0 22 e3Y^hVjoU2;6E@gY2k:4;0
+l99
+L98
+VP]0bk381VQiD3zCN_>_3g1
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!s100 QP2LJF1DhhO;UWjP8B^Iz2
+!i10b 1
+Emips
+Z34 w1383685646
+R3
+R4
+Z35 8C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_mips_v5.vhd
+Z36 FC:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_mips_v5.vhd
+l0
+L5
+V<O9zTheM9V4QL^EB<=8i33
+R7
+32
+Z37 !s110 1384814911
+Z38 !s108 1384814911.269000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_mips_v5.vhd|
+Z40 !s107 C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_mips_v5.vhd|
+R12
+R13
+!s100 FBLS<nl=L`a@f@jL]ob[Z0
+!i10b 1
+Astruct
+Z41 DEx4 work 9 mips_zero 0 22 S2nSloEi0AeC_Y6ITj@h91
+DEx4 work 3 alu 0 22 aF6Sa[BTdLBMLlNXg`6j[2
+DEx4 work 3 mux 0 22 QQW5[4nnFNQCF]Dc6ooK51
+DEx4 work 11 sign_extend 0 22 di0S@F0W4iio[PAFJ3M]e1
+DEx4 work 7 regfile 0 22 bV0eo;5fY7BbS<af9^kD^1
+DEx4 work 4 add4 0 22 `=LzEQYo;YhO0bcHNI4Ez2
+DEx4 work 13 mips_register 0 22 X6CazbSS?[za8`nc@57LL0
+R31
+R32
+R33
+DEx4 work 15 mips_controller 0 22 9>e`D?V2Sn9;OUglFo5mV2
+R2
+Z42 DEx4 work 12 mips_decoder 0 22 01GGSZVR2jJa2EG;D8M=^3
+R3
+DEx4 work 4 mips 0 22 <O9zTheM9V4QL^EB<=8i33
+l61
+L10
+VIQAUc]WlkSg2ZB3iOc0Yj3
+R7
+32
+R37
+R38
+R39
+R40
+R12
+R13
+!s100 JLo;aofL]A@K40eGPIdIZ3
+!i10b 1
+Emips_bit_register
+R1
+R3
+R4
+R5
+R6
+l0
+L62
+VWE5Lj^<N<OREaa_<_ZPY_3
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!s100 F0`[3Q=0C5jnFMOGNIB0M0
+!i10b 1
+Amips_bitreg_behavior
+R3
+DEx4 work 17 mips_bit_register 0 22 WE5Lj^<N<OREaa_<_ZPY_3
+l70
+L67
+V`o18`@JV<AWh45W4jMD@[2
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!s100 W_1F41T9OBPM:FP1EoLI31
+!i10b 1
+Emips_controller
+Z43 w1384814908
+R3
+R2
+R4
+Z44 8C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_control_v3_m.vhd
+Z45 FC:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_control_v3_m.vhd
+l0
+L89
+Vc55`7AXRH]d^e]>ThV=kN3
+R7
+32
+Z46 !s110 1384814920
+Z47 !s108 1384814920.692000
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_control_v3_m.vhd|
+Z49 !s107 C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/lab4_control_v3_m.vhd|
+R12
+R13
+!s100 @=VXR?KGKg<>^QPHoblEb1
+!i10b 1
+Abehaviour
+R3
+R2
+DEx4 work 15 mips_controller 0 22 c55`7AXRH]d^e]>ThV=kN3
+l121
+L119
+VBDA5zhaOdNCLUT<PR@eDB3
+R7
+32
+R46
+R47
+R48
+R49
+R12
+R13
+!s100 fU>`_[hFhbNN6K:1970?Q1
+!i10b 1
+Emips_decoder
+R43
+R3
+R2
+R4
+R44
+R45
+l0
+L17
+V01GGSZVR2jJa2EG;D8M=^3
+R7
+32
+R46
+R47
+R48
+R49
+R12
+R13
+!s100 AgCS]J9mVPcHnkhknM;f^0
+!i10b 1
+Amips_decoder_behavior
+R3
+R2
+R42
+l29
+L28
+V>2Jfd[64c7RlPVmX0WjKk0
+R7
+32
+R46
+R47
+R48
+R49
+R12
+R13
+!s100 lCnVIKHk:K0OH5GFdcJ:[3
+!i10b 1
+Emips_register
+R1
+R3
+R4
+R5
+R6
+l0
+L55
+VX6CazbSS?[za8`nc@57LL0
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!s100 fAC3oKJ2h<S30z9oO>52Q2
+!i10b 1
+Amips_register_behavior
+R14
+DEx4 work 13 mips_register 0 22 5mVIbSDVd`3i3f<jMCWk_2
+l26
+L23
+VcfQIfj7j=3l8G<SZ[R4oL0
+R7
+32
+R22
+R23
+R12
+R13
+R20
+w1384807643
+R19
+!s110 1384807666
+!s108 1384807666.730000
+!s100 3blGPRUUG:7LlG^hmZW[B0
+!i10b 1
+Emips_zero
+R1
+R3
+R4
+R5
+R6
+l0
+L28
+VS2nSloEi0AeC_Y6ITj@h91
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!s100 ^iUm^Nj4JfHgQ4PMa[QeX0
+!i10b 1
+Amips_zero_behavior
+R3
+R41
+l37
+L36
+ViZ02E2dD8BI<9Nh^^OB^=0
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!s100 46c[YYdg3Jh=MlNH[fz652
+!i10b 1
+Emux
+R1
+R3
+R4
+R5
+R6
+l0
+L86
+VQQW5[4nnFNQCF]Dc6ooK51
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!s100 ScCYE[B;PHj[Sb1@WPhLd3
+!i10b 1
+Amux_behavior
+R14
+DEx4 work 3 mux 0 22 _R0<knR3D3j>^MUah[=7;2
+l25
+L24
+V5n2n=ADfogVO`]YDVF:621
+R7
+32
+R15
+R12
+R13
+FC:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/mux.vhd
+w1383249857
+8C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/mux.vhd
+!s108 1383249885.689000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/mux.vhd|
+!s107 C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/mux.vhd|
+!s100 J8]8==GamLM71fNOR69m]3
+!i10b 1
+Eregfile
+R1
+R2
+R3
+R4
+R5
+R6
+l0
+L132
+VbV0eo;5fY7BbS<af9^kD^1
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!s100 K6zRGD@G:P2RMDezS6_[>1
+!i10b 1
+Aregfile_behavior
+R14
+DEx4 work 7 regfile 0 22 gjCabe1lGVf9?^KWA1_li2
+l47
+L33
+V1NlIi@HfHF[2BAbcmDHKe1
+R7
+32
+R15
+R12
+R13
+FC:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/register_file.vhd
+w1383249729
+8C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/register_file.vhd
+!s108 1383249885.913000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/register_file.vhd|
+!s107 C:/Users/Albert E/Desktop/aew0024 _ Albert Wallace _ Lab 003 _COMP4300/register_file.vhd|
+!s100 fnllFb3gZKVQJ;kGIn@Jh2
+!i10b 1
+Esign_extend
+R24
+R14
+R4
+R25
+R26
+l0
+L15
+VmO`UMNWH4L7e1@N0OC2Oe2
+!s100 @KbkC[K4eM9mL@m_6ImHB3
+R7
+32
+R27
+!i10b 1
+R28
+R29
+R30
+R12
+R13
+Asign_extend_behavior
+R14
+Z50 DEx4 work 11 sign_extend 0 22 mO`UMNWH4L7e1@N0OC2Oe2
+l24
+L22
+VXW:8ZUVH?De^26f2WIILj0
+!s100 QKSMG?`A<_NFbBjUTD1[`1
+R7
+32
+R27
+!i10b 1
+R28
+R29
+R30
+R12
+R13

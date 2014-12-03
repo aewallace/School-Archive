@@ -1,0 +1,73 @@
+////////////////Determining who is an MPR:
+
+…Can we default everyone to an MPR? But they don’t know about other MPRs. If the last truck finds that it can reach at least one node ahead, it will remain an MPR, set itself as the nextRearMPR, and…
+
+No, no, DST and SRCMPR equal the ID of the newly-designated MPR, while PREV and SRC indicate what node tried to force the set. At that moment, anything which hears that and finds that its ID is not in all those 3 spots, just decommission itself as an MPR [we will only distribute across the range of neighbors once we know who the neighbors are, which we will always determine through the beacon broadcast] and set the ID found in PREV as the next-rear MPR; the one that does find its ID in all those 3 spots is the newly-appointed MPR, sets itself as an MPR, sets the nextRearMPR same as the ones who decommissioned, and figures out the nextFrontMPR.
+
+In determining where to send /forward/, the newly-appointed MPR will be sure to (1) return that packet as it was [which is normal], and (2) do the same thing that the rear-most truck did. (The packet from earlier will likely be returned and ignored, etc etc, but that is fine). And this keeps going until we get super close to the front. At the front, we will reach forward. Either everything will be in range (in which case you set the frontmost vehicle as an MPR, and the process is done), or there will be nothing in range (in which case you remain an MPR, and the process is done). In the former case, we still set the nextFrontMPR to that frontmost truck; in the latter case, we let the nextFrontMPR be set to self.id.
+
+Should that platoon reach a point where it wants to merge with a platoon ahead, this can be handled through either broadcast or through MPR-MPR communication. But that logic doesn’t necessarily need to change.
+
+After some time, when the nodes start broadcasting their location beacon widely, they will know both nextRearMPR and nextFrontMPR. Let _all_ trucks default to reporting nextFrontMPR as the SRC MPR, regardless
+
+For true general broadcasts not through an MPR, set MPR to 0. This is absolutely required so the receiving nodes know to only update position info, not the expected MPR for a given node.
+
+As the PREV field in the packet indicates anyone who forwards [and indicates the last one who did the forwarding], when PREV != 0 [and we aren’t trying to trigger any of the other settings, which we discussed elsewhere], we make note of the PREV field as the access route through which we want to go first. That way, when we want to send a packet to a specific port, we send directly to the cache-mapped PREV; that node whose ID = PREV will look at the DST, see that it is its job to route that packet to that passive node [or to itself possibly, or to another MPR], and eventually we reach a point where we can simply directly address that node whose ID = DST, no issue.
+
+How does a given MPR know that it is its job to report for that NODE? Well, earlier, when we were doing all of the settings, we determined that there were some one-hop neighbors. If the DST ID is in that cache of one-hop neighbors, then we can go ahead and send it in.
+
+Where does the set of multi-hop neighbors come in? Well, if something is being sent to nodeX, and nodeX not in one-hop neighbor cache, then you know where you have to send to get it going.
+
+What if not in either one hop or two hop [rare]? Well, we have to send it to the other MPRs around you. Just send it out like normal, and each MPR will be responsible for broadcasting. When it eventually reaches the destination, you’ll get your packet back, with PREV updated, SRC updated, and DST updated. Update based on PREV and SRC.
+
+If PREV = SRC, then it’s one-hop (and probably from an MPR)
+If PREV /= SRC, But SRCMPR = PREV, then it’s still one-hop and went through a local MPR
+If PREV /= SRC, and SRCMPR /= PREV, it’s a multi-hop. Make note of PREV as a way to get back to SRC, and keep attempting to reach the DST.
+And really, honestly, truly, do not broadcast unless …[EDIT: in code right now, PREV = 0 determines whether it was a broadcast. That’s very valid!]. If that is done, when the packet will die if it never reaches its destination, and things will not erroneously try to update the cache.
+
+//////////////Using the cache with MPR support:
+-First, check 1-hop entries.
+——If in one-hop entries [and if in reachable neighbors], with no known way to get to you, broadcast to all reachable nodes and hope you get a reply.
+——If in one-hop entries [and thus in reachable neighbors], with a known way to get to you, send packet to that port. [duh.]
+——If in two-hop entries [and thus not in reachable neighbors, but you know the node is possibly out there somewhere], with no known way to to get to you, broadcast. [The effect will cascade down to the last MPR and the last node…knowing the seq number and the last place it was sent will prevent it from propagating through the chain in a loop for eternity…actually, you simply don’t broadcast back to the src. For prev.id, we exclude that in the loop. just skip over it. And since we’re only doing things in immediate reach…].
+——If in two-hop entries [and thus not in reachable neighbors, but you know the node is possibly out there somewhere], with some known way of getting you you, push to the expected MPR. That MPR probably knows which way to go to get to you. Easy peasy.
+
+So, uh, when do we broadcast?
+
+－IF IN A PLATOON: Every 100ms, we broadcast a packet with all normal location information, proper source, PREV = 0 [which has always meant we broadcast], SRCMPR = …umm…preferably the chosen MPR for that node?… prev = self.id, plat = whatever platoon it’s in, &etc.
+－IF IN A SELF PLATOON (platoon = self.id, leader = 0, trail = 0): Every 10ms, we broadcast such information, same as above.
+
+//////////////What happens when we receive packets?
+Well, we know we return the packet as a way to acknowledge it. I believe that’s the case, anyway. But is it returned as-is, or is something modified? Let’s see…
+When we receive a packet successfully, we shove it into the to-be-forwarded queue. This wantonly rebroadcasts it, meaning it will probably hit a few nodes a few times before it dies [thanks to the sequence number check]. However, with this setup, there’s not really an acknowledgement. You either get the packet, or you don’t.
+
+Please be aware of potential weirdness due to how we will treat MPRs.
+
+///////////////Don’t we have to tell everyone about our neighbors?
+Well, no, not necessarily. Link states are still up-to-date regarding the most important thing: MPRs.
+
+/////////////How do we forward packets?
+CHECK THE DST FIELD! That determines [eventually] to where we send our packets.
+
+/////////////How do we make use of the caches?
+Note that, when routing packets, we must check the destination and go based off of that. But also note that, in many cases, we manually push a port ID into the functions. If we’re just doing sendData or something similar, that is fine. However, when it comes to forwarding, we must check the DST of all the packets for the intended port #. In that case, we can ignore the port number being passed in.
+OR we can control when we are doing the forwarding. Match port to DST. If Port matches DST, then the node having the stuff forwarded is a 1-hop neighbor. But undoubtedly, there will be things to end up in the cache that are not 1-hop neighbors…so they’ll be multi-hop neighbors [2 or more hops].
+Ideally, we could just forward packets to the next MPR for that port. And that’s where this comes into play.
+In the TN controller, go across the whole range and see if there are any packets addressed to anyone. That way, we will forward them only when we run across PORT = DST.
+Then, when we run across PORT = DST and realize they are not 1-hop, we send to 1 (or multiple) MPRs
+Then those MPRs get a packet with PREV set to your ID as normal, and they bounce off to the next MPR until someone knows about them. If they know nothing about them…???
+－Detecting 
+--If MPR: make sure your VC has a copy of the cache. For every node to which something is being sent, it will check a few things. We have already checked to see if it is a neighbor and if we should just send it on. But making use of the cachethe cache. It will see if it has a care-of address [an MPR]. If it does, forward the packet to that port. If it does not have an MPR [MPR = 0]
+－If normal node: Do not use the caches. We just have the destination set in the packet and use our known MPR or broadcast. No benefit comes of the cache for normal nodes, but it should still exist in the event that a normal node becomes an MPR.
+
+If SRCMPR = 0 and it was a broadcast, we make sure to update that the node is no longer an MPR [as held in our cache].
+
+To-do:
+[   ] Update the caching algorithm, please. It now has all the information necessary to determine if nodes go in the one-hop cache or in the two-hop cache. 
+[   ] We also haven’t given it logic to /make/ the MPR packets or…Wait, what’s an MPR packet?
+[   ] Ensure a node doesn’t spontaneously unset itself as an MPR
+[   ] Use the flippin’ cache to do intelligent routing. [pass the one-neighbor and two-neighbor caches to VC, at the very least
+[   ] Detecting a nearby MPR. [So if we receive a packet, and we are an MPR, and that thing says it too was an MPR, we write that as either our primary or secondary MPRs
+[   ] If the ID is ever listed in SRCMPR, it’s an MPR. It’s up to each individual node to determine how the frick to get out.
+[   ] Make sure we broadcast at the intervals we want to broadcast. [Maybe already exists and functions well due to old code; unchecked].
+[   ] Update nukem.py

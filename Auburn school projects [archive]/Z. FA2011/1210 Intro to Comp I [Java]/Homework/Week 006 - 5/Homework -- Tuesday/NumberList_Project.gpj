@@ -1,0 +1,22 @@
+!656;s
+J
+SAU0PATH+=%<JGRASP_PATHS>%;
+SCU0PATH+=%<JGRASP_PATHS>%;\012CYGWIN=nodosfilewarning
+S+U0PATH+=%<JGRASP_PATHS>%;\012CYGWIN=nodosfilewarning
+SJU0CLASSPATH=+%;%<EXTENSION_CLASSPATHS>\012CLASSPATH+=%<JGRASP_CLASSPATHS>%;\012CLASSPATH+=.%;\012PATH+=%<JAVA_BIN_DIR>%;\012PATH+=%<JGRASP_PATHS>%;\012Compile\012NOT_FOUND_MESSAGE==Make sure you have the full JDK, not just the JRE, installed.\\nThe JDK is available from http://www.oracle.com/technetwork/java/index.html.\012Run_Applet +Debug_Applet\012ADD_APPLETVIEWER_CLASSPATH==Y\012Document\012CLASSPATH=+%;%<TOOL_CLASSPATHS>\012
+SOU0PATH+=%<JGRASP_PATHS>%;\012CYGWIN=nodosfilewarning
+SPU0
+s#i0
+s#k0
+s#j0
+s#l0
+!2026;d
+[\012  grasp [\012   legendy -39.875\012   legendx 0.0\012   version 1\012   winflags 2\012   height 445\012   width 531\012   wbp 2\012   initlayout 0\012   yoffs 15.124999999999972\012   xoffs -1.5000000000001137\012   scale 1.0\012   args ""\012   otherflags 139\012   shallowjar 1\012   visflags 118423807\012  ]\012  directed 1\012  node [\012   ClassInfo [\012    fields "NumberList\\011()V\\011c\\0111\\011\\011\\011NumberList\011main\\011([Ljava/lang/String;)V\\011\\0119\\011\\011\\011NumberList"\012    condition 1\012    access2 0\012    access 2490401\012    classname "NumberList"\012    fromclassfiledate 1317084845000\012    fromclassfilename "%\011NumberList.class"\012    fromfilename "%\011NumberList.java"\012   ]\012   id 0\012   graphics [\012    center [\012     x -79.5\012     y 6.749999999999972\012     z 0.0\012    ]\012   ]\012   vgj [\012    flags 0\012   ]\012  ]\012  node [\012   ClassInfo [\012    fields "number\\011I\\011\\0112\\011\\011\\011NumberOperations\011NumberOperations\\011(I)V\\011c\\0111\\011\\011\\011NumberOperations\011getValue\\011()I\\011\\0111\\011\\011\\011NumberOperations\011isGreater\\011(I)I\\011\\0111\\011\\011\\011NumberOperations\011oddsUnder\\011()Ljava/lang/String;\\011\\0111\\011\\011\\011NumberOperations\011powersTwoUnder\\011()Ljava/lang/String;\\011\\0111\\011\\011\\011NumberOperations\011toString\\011()Ljava/lang/String;\\011\\0111\\011\\011\\011NumberOperations"\012    condition 1\012    access2 0\012    access 2228257\012    classname "NumberOperations"\012    fromclassfiledate 1317084854000\012    fromclassfilename "%\011NumberOperations.class"\012    fromfilename "%\011NumberOperations.java"\012   ]\012   id 1\012   graphics [\012    center [\012     x 39.0\012     y 8.937499999999957\012     z 0.0\012    ]\012   ]\012   vgj [\012    flags 0\012   ]\012  ]\012  edge [\012   ClassInfo [\012    dependencies "NumberOperations\\011(I)V\\011c\\011\\011\\011\\011NumberOperations"\012    type 3\012   ]\012   source 1\012   target 0\012  ]\012 ]!1;k
+1!48;g
+%\011NumberList.java
+%\011NumberOperations.java
+!42;f
+%	NumberList.java
+%	NumberOperations.java
+!98;t
+jgrCheckstyle0xr	%\011NumberList.java	1317084843073:P	%\011NumberOperations.java	1317084850014:P	

@@ -1,0 +1,18 @@
+INSTUPprod.trucknodebuilder
+/Volumes/media partition/Dropbox/School/AU/Previous Semesters/U Fa2013/COMP5700 Umphress/wkspc/aew0024/5360-A11/prod/trucknodebuilder.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&3|6|2|5&&3|7|2|5&&3|8|2|5&&3|9|2|5&&3|10|2|5&&3|11|2|5&&3|12|2|5&&3|13|2|5&&2|14|2|1&&3|13|2|15&&3|4|2|15&&3|6|2|15&&3|7|2|15&&3|8|2|15&&3|9|2|15&&3|10|2|15&&3|11|2|15&&3|12|2|15
+TruckNodeBuilder.__init__=5
+TruckNodeBuilder.readFromConfigFile=15
+actualNodeNumber=6
+readFromConfigFile=14
+tuxMachineAssignment=7
+configFileForNodes=13
+prod.trucknodebuilder=2
+listOfNeighborNodes=12
+initialXPosition=9
+portNumberUDP=8
+initialYPosition=10
+thisStringShouldReadAsLinks=11
+__init__=3
+TruckNodeBuilder=1
+lineCount=4

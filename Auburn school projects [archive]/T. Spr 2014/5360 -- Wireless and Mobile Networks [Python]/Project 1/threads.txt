@@ -1,0 +1,24 @@
+Each node has two threads:
+	1)
+		every 10ms, send self info out to all neighbors
+			each node knows which ports represent its neighbors
+			broadcast pkt on each neighbor port in turn
+			for each neighbor in neighbors
+				if neighbor is too far, remove from neighbor list, and do not broadcast
+				otherwise, broadcast self data packet and any queued to-be-forwarded packets
+			after broadcast, check if neighbors are still neighbors (within range)
+				if not, remove
+		update its own x, v, and a after each broadcast (~10ms)
+			uses real time, not timesteps
+	2)
+		continuously listens for broadcasts on own port
+			only other nodes broadcast on this node's port
+			whenever a truck data packet is received:
+				check most recent forward table
+					maps node id to highest packet seqNum that has been received with a source == node id
+					if current packet has already been received/forwarded, do not update cache or forward
+					if this seqNum is the highest seqNum for node id, then do next steps and add this packet to forwarding queue
+				update corresponding truck cache entry
+					check distance, if close, add neighbor
+				add immediate sender to neighbor list, if not already neighbor
+				

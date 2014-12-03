@@ -1,0 +1,5 @@
+Dear COMP1210 students,
+
+There is a typo on the homework for the AverageOfThree program (on the last page). The average of 5, 5, and 5 is 5.0. The homework says it is 3.0. The homework is wrong. :( Please calculate the correct average.
+
+Also: Save as AgeStatistics, not AgeCalculations.
